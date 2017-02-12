@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 11</name>
+    <events>
+        <include>MainSheet</include>
+        <event-block sid="4084950145752473">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5456808767548148" type="System">
+                    <param id="0" name="Variable">LevelComplete</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="1056277415439921" type="Unlocked">
+                    <param id="0" name="X">12</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3865595503535435">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5553414806978117" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="1322966024379175" type="Stars">
+                            <param id="0" name="X">11</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="3411196531360309" type="LevelStars">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2766377832454988">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9258046156461077" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="6631095678433022" type="Stars">
+                            <param id="0" name="X">11</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="2302348989285249" type="LevelStars">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5361792152745094">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2033141473275108" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="5449195035169743" type="Stars">
+                            <param id="0" name="X">11</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="8470689695123875" type="LevelStars">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

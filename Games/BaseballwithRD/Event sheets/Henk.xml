@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Henk</name>
+    <events>
+        <event-block sid="9872287816086191">
+            <conditions>
+                <condition id="666" name="On initialised" sid="8601118494742557" type="Henk" />
+            </conditions>
+            <actions>
+                <action id="666" name="Associate object type" sid="8928958248880325" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_RHand</param>
+                    <param id="1" name="Name">&quot;Henk_R Hand&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="4182738738633885" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_ShootFX</param>
+                    <param id="1" name="Name">&quot;Henk_Shoot FX&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="8678860269212449" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_Ball_000</param>
+                    <param id="1" name="Name">&quot;Henk_Ball_000&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="6792906693624925" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_Ball</param>
+                    <param id="1" name="Name">&quot;Henk_Ball&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="2521849375776367" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_LLeg</param>
+                    <param id="1" name="Name">&quot;Henk_L Leg&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="2130099686587795" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_RLeg</param>
+                    <param id="1" name="Name">&quot;Henk_R Leg&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="6228126094218901" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_RThigh</param>
+                    <param id="1" name="Name">&quot;Henk_R Thigh&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5678734357771838" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_LThigh</param>
+                    <param id="1" name="Name">&quot;Henk_L Thigh&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5959491947261132" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_Torso</param>
+                    <param id="1" name="Name">&quot;Henk_Torso&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5067348469800501" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_Head</param>
+                    <param id="1" name="Name">&quot;Henk_Head&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="5673315823269253" type="Henk">
+                    <param id="0" name="Object">Henk_Henk_LHand</param>
+                    <param id="1" name="Name">&quot;Henk_L Hand&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

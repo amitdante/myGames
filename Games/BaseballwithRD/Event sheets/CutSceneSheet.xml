@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>CutSceneSheet</name>
+    <events>
+        <variable constant="0" name="Dclickable" sid="1744206156214772" static="0" type="number">0</variable>
+        <variable constant="0" name="dialogue" sid="5304994094889194" static="0" type="number">0</variable>
+        <event-block sid="6155645745651487">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9908257902489406" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="5374876635104488" type="System">
+                    <param id="0" name="Object to create">HDialogue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">280</param>
+                    <param id="3" name="Y">180</param>
+                </action>
+                <action id="-9" name="Set value" sid="3920013540655732" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2934090663068336" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8572618970844572">
+            <conditions>
+                <condition id="0" name="On click" sid="9280724253471176" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6373185831252121" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2997912666401011" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9647344020322018" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5460903732045367" type="HDialogue" />
+                <action id="-3" name="Create object" sid="9291788129915428" type="System">
+                    <param id="0" name="Object to create">JDialogue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">491</param>
+                    <param id="3" name="Y">320</param>
+                </action>
+                <action id="-16" name="Wait" sid="6002888496152918" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="8537732646915072" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="1427404683405116" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7242058829028517">
+            <conditions>
+                <condition id="0" name="On click" sid="8856399496305038" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8110787743867637" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5468248279461534" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5480535908667542" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7316631297789264" type="JDialogue" />
+                <action id="-3" name="Create object" sid="1792207821424579" type="System">
+                    <param id="0" name="Object to create">HDialogue</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">280</param>
+                    <param id="3" name="Y">180</param>
+                </action>
+                <action id="5" name="Set frame" sid="7007684014226124" type="HDialogue">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5083830398227432" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="4099826536297463" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6460628041919845" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1766914156428478">
+            <conditions>
+                <condition id="0" name="On click" sid="5364590927482279" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4226966942521981" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3249028907745641" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4017855887355288" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2292245889604016" type="HDialogue" />
+                <action id="-3" name="Create object" sid="4740165597873138" type="System">
+                    <param id="0" name="Object to create">JDialogue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">491</param>
+                    <param id="3" name="Y">320</param>
+                </action>
+                <action id="5" name="Set frame" sid="4420539503813167" type="JDialogue">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="1647959665994391" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="7731020354352035" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5413986454635564" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9130214158286092">
+            <conditions>
+                <condition id="0" name="On click" sid="1856975863603099" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5803457748360126" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="262021065886379" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6401646524755715" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8246963861257611" type="JDialogue" />
+                <action id="-3" name="Create object" sid="9579974895013717" type="System">
+                    <param id="0" name="Object to create">HDialogue</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">280</param>
+                    <param id="3" name="Y">180</param>
+                </action>
+                <action id="5" name="Set frame" sid="2161223865302711" type="HDialogue">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="9974933436293803" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="6040548047942465" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6401896267475382" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="347567546264734">
+            <conditions>
+                <condition id="0" name="On click" sid="3892659735773186" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9313707840053332" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1458549052811777" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7909650009799371" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5927353481570791" type="HDialogue" />
+                <action id="-3" name="Create object" sid="1292003507872458" type="System">
+                    <param id="0" name="Object to create">JDialogue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">491</param>
+                    <param id="3" name="Y">320</param>
+                </action>
+                <action id="5" name="Set frame" sid="8503276848392694" type="JDialogue">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="7256767014886619" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="9790670863498388" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="1453992162429453" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3454281057847322">
+            <conditions>
+                <condition id="0" name="On click" sid="1523021888461297" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4620075321894102" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6817047031812377" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9358848542771884" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6004230116098631" type="JDialogue" />
+                <action id="-3" name="Create object" sid="6234253927676989" type="System">
+                    <param id="0" name="Object to create">HDialogue</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">280</param>
+                    <param id="3" name="Y">180</param>
+                </action>
+                <action id="5" name="Set frame" sid="5263400669674132" type="HDialogue">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="-16" name="Wait" sid="2860372128280576" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="8546324151445042" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5143974219099598" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2999189586031732">
+            <conditions>
+                <condition id="0" name="On click" sid="8095132283790856" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2108674635556968" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9089403658487317" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3927991848610072" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2221563839023203" type="HDialogue" />
+                <action id="-3" name="Create object" sid="9225231620593347" type="System">
+                    <param id="0" name="Object to create">JDialogue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">491</param>
+                    <param id="3" name="Y">320</param>
+                </action>
+                <action id="5" name="Set frame" sid="5146723097392826" type="JDialogue">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="-16" name="Wait" sid="1749547720145446" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="8836664614799279" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4047296023899776" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3102897651682841">
+            <conditions>
+                <condition id="0" name="On click" sid="6444986301532616" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6185431093019012" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7518151849992337" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4135152184350062" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7937021367963764" type="JDialogue" />
+                <action id="-3" name="Create object" sid="6359933505966812" type="System">
+                    <param id="0" name="Object to create">HDialogue</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">280</param>
+                    <param id="3" name="Y">180</param>
+                </action>
+                <action id="5" name="Set frame" sid="6072459422613219" type="HDialogue">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+                <action id="-16" name="Wait" sid="3455085229773312" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="4700045417133558" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="166082648778623" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6637205601008672">
+            <conditions>
+                <condition id="0" name="On click" sid="2656908002148632" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="654911818747649" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3138298095038026" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2293086782701183" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5981470710020608" type="HDialogue" />
+                <action id="-3" name="Create object" sid="5120449612442612" type="System">
+                    <param id="0" name="Object to create">JDialogue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">491</param>
+                    <param id="3" name="Y">320</param>
+                </action>
+                <action id="5" name="Set frame" sid="2305785456039836" type="JDialogue">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+                <action id="-16" name="Wait" sid="7646630179214573" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="8809862473008081" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5682174207370626" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1894357577979581">
+            <conditions>
+                <condition id="0" name="On click" sid="6329380115595183" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5540194001217425" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="171483788199687" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4133163612422916" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8194213665900815" type="JDialogue" />
+                <action id="-3" name="Create object" sid="2418267827609254" type="System">
+                    <param id="0" name="Object to create">HDialogue</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">280</param>
+                    <param id="3" name="Y">180</param>
+                </action>
+                <action id="5" name="Set frame" sid="5069732029821897" type="HDialogue">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+                <action id="-16" name="Wait" sid="775277270796129" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="8270725821198107" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="1904977311030493" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2468225390198589">
+            <conditions>
+                <condition id="0" name="On click" sid="2215266726313694" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9029978527722941" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8556148158936152" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2547700528934348" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3451574747887131" type="HDialogue" />
+                <action id="-3" name="Create object" sid="8319811972662899" type="System">
+                    <param id="0" name="Object to create">JDialogue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">491</param>
+                    <param id="3" name="Y">320</param>
+                </action>
+                <action id="5" name="Set frame" sid="6913194494280747" type="JDialogue">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+                <action id="-16" name="Wait" sid="3802814650794697" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="7432740115159913" type="System">
+                    <param id="0" name="Variable">dialogue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4629884855147284" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="88733231928773" type="System">
+                    <param id="0" name="Layout">Stage1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6172682358651842" type="System">
+                    <param id="0" name="Variable">Dclickable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9719387818963094">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2055903282382984" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Skip</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9052244633817833" type="System">
+                    <param id="0" name="Layout">tutorial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="2473966435341503">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6865597663700242" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">KIZ10Logo</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="3096462939601088" type="Touch">
+                    <param id="0" name="Object">KIZ10Logo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="6616981414198394" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

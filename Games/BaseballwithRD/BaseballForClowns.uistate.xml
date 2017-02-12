@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">tutorial</layout>
+        <layout order="2">Layout 1</layout>
+        <layout active="1" order="4">Stage1</layout>
+        <layout order="5">Loader</layout>
+        <layout order="8">CutScene</layout>
+        <layout order="11">Menu</layout>
+        <event-sheet order="1">tutsheet</event-sheet>
+        <event-sheet order="3">MainSheet</event-sheet>
+        <event-sheet order="6">LoaderSheet</event-sheet>
+        <event-sheet order="7">MenuSheet</event-sheet>
+        <event-sheet order="9">CutSceneSheet</event-sheet>
+        <event-sheet order="10">Event sheet 30</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="HenkFamily" />
+        <family expanded="0" name="MenuHenkFamily" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Henk sprites/" />
+        <folder expanded="1" path="object-folder/MenuHenk sprites/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/Spriter animations/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_RHand/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_ShootFX/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_Ball_000/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_Ball/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_LLeg/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_RLeg/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_RThigh/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_LThigh/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_Torso/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_Head/" />
+        <folder expanded="1" path="animation-folder/Henk_Henk_LHand/" />
+        <folder expanded="1" path="animation-folder/MenuHenk_Henk_HandR/" />
+        <folder expanded="1" path="animation-folder/MenuHenk_Henk_Pant/" />
+        <folder expanded="1" path="animation-folder/MenuHenk_Henk_Torso/" />
+        <folder expanded="1" path="animation-folder/MenuHenk_Henk_Head/" />
+        <folder expanded="1" path="animation-folder/MenuHenk_Henk_HandL/" />
+        <folder expanded="1" path="animation-folder/BG1/" />
+        <folder expanded="1" path="animation-folder/Henk/" />
+        <folder expanded="1" path="animation-folder/Aim/" />
+        <folder expanded="1" path="animation-folder/ball/" />
+        <folder expanded="1" path="animation-folder/Boundary/" />
+        <folder expanded="1" path="animation-folder/ScoreBg/" />
+        <folder expanded="1" path="animation-folder/BallHUD/" />
+        <folder expanded="1" path="animation-folder/Joker/" />
+        <folder expanded="1" path="animation-folder/Baloon/" />
+        <folder expanded="1" path="animation-folder/Head/" />
+        <folder expanded="1" path="animation-folder/Torso/" />
+        <folder expanded="1" path="animation-folder/Legs/" />
+        <folder expanded="1" path="animation-folder/LHand/" />
+        <folder expanded="1" path="animation-folder/RHand/" />
+        <folder expanded="1" path="animation-folder/PauseBtn/" />
+        <folder expanded="1" path="animation-folder/PauseBG/" />
+        <folder expanded="1" path="animation-folder/PRestart/" />
+        <folder expanded="1" path="animation-folder/PResume/" />
+        <folder expanded="1" path="animation-folder/PMenu/" />
+        <folder expanded="1" path="animation-folder/ImageHenk/" />
+        <folder expanded="1" path="animation-folder/MenuBg/" />
+        <folder expanded="1" path="animation-folder/MenuHenk/" />
+        <folder expanded="1" path="animation-folder/Logo/" />
+        <folder expanded="1" path="animation-folder/PlayBtn/" />
+        <folder expanded="1" path="animation-folder/BtnBG/" />
+        <folder expanded="1" path="animation-folder/Achievements/" />
+        <folder expanded="1" path="animation-folder/HighScores/" />
+        <folder expanded="1" path="animation-folder/Help/" />
+        <folder expanded="1" path="animation-folder/Sound/" />
+        <folder expanded="1" path="animation-folder/LevelBG/" />
+        <folder expanded="1" path="animation-folder/LevelMenuBG/" />
+        <folder expanded="1" path="animation-folder/L1/" />
+        <folder expanded="1" path="animation-folder/L2/" />
+        <folder expanded="1" path="animation-folder/L3/" />
+        <folder expanded="1" path="animation-folder/L4/" />
+        <folder expanded="1" path="animation-folder/L5/" />
+        <folder expanded="1" path="animation-folder/L6/" />
+        <folder expanded="1" path="animation-folder/L7/" />
+        <folder expanded="1" path="animation-folder/L8/" />
+        <folder expanded="1" path="animation-folder/L9/" />
+        <folder expanded="1" path="animation-folder/L10/" />
+        <folder expanded="1" path="animation-folder/CloseBtn/" />
+        <folder expanded="1" path="animation-folder/h1/" />
+        <folder expanded="1" path="animation-folder/h2/" />
+        <folder expanded="1" path="animation-folder/h3/" />
+        <folder expanded="1" path="animation-folder/RBtn/" />
+        <folder expanded="1" path="animation-folder/LBtn/" />
+        <folder expanded="1" path="animation-folder/StarIcon/" />
+        <folder expanded="1" path="animation-folder/LevelComplete/" />
+        <folder expanded="1" path="animation-folder/Next/" />
+        <folder expanded="1" path="animation-folder/Menu/" />
+        <folder expanded="1" path="animation-folder/Restart/" />
+        <folder expanded="1" path="animation-folder/OverlayBall/" />
+        <folder expanded="1" path="animation-folder/OverlayBG/" />
+        <folder expanded="1" path="animation-folder/LevelStars/" />
+        <folder expanded="1" path="animation-folder/IronP/" />
+        <folder expanded="1" path="animation-folder/Tire/" />
+        <folder expanded="1" path="animation-folder/KillerBlock/" />
+        <folder expanded="1" path="animation-folder/Domino/" />
+        <folder expanded="1" path="animation-folder/P1/" />
+        <folder expanded="1" path="animation-folder/P2/" />
+        <folder expanded="1" path="animation-folder/P3/" />
+        <folder expanded="1" path="animation-folder/P4/" />
+        <folder expanded="1" path="animation-folder/P5/" />
+        <folder expanded="1" path="animation-folder/Concrete/" />
+        <folder expanded="1" path="animation-folder/BG2/" />
+        <folder expanded="1" path="animation-folder/PEnter/" />
+        <folder expanded="1" path="animation-folder/PExit/" />
+        <folder expanded="1" path="animation-folder/BG3/" />
+        <folder expanded="1" path="animation-folder/ElecBase/" />
+        <folder expanded="1" path="animation-folder/ElecLong/" />
+        <folder expanded="1" path="animation-folder/ElecShort/" />
+        <folder expanded="1" path="animation-folder/Switch/" />
+        <folder expanded="1" path="animation-folder/Box/" />
+        <folder expanded="1" path="animation-folder/Fan/" />
+        <folder expanded="1" path="animation-folder/VMachine/" />
+        <folder expanded="1" path="animation-folder/Wood/" />
+        <folder expanded="1" path="animation-folder/HHead/" />
+        <folder expanded="1" path="animation-folder/JHead/" />
+        <folder expanded="1" path="animation-folder/HDialogue/" />
+        <folder expanded="1" path="animation-folder/JDialogue/" />
+        <folder expanded="1" path="animation-folder/Skip/" />
+        <folder expanded="1" path="animation-folder/Click_Tap/" />
+        <folder expanded="1" path="animation-folder/AimPT/" />
+        <folder expanded="1" path="animation-folder/Lleg/" />
+        <folder expanded="1" path="animation-folder/Rleg/" />
+        <folder expanded="1" path="animation-folder/Points/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/LoaderBG/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/CreditsBtn/" />
+        <folder expanded="1" path="animation-folder/CreditsPanel/" />
+        <folder expanded="1" path="animation-folder/CreditsClose/" />
+        <folder expanded="1" path="animation-folder/KIZ10Logo/" />
+        <folder expanded="1" path="animation-folder/moregames/" />
+        <folder expanded="1" path="animation-folder/addtosite/" />
+        <folder expanded="1" path="animation-folder/Win/" />
+        <folder expanded="1" path="animation-folder/FailHelp/" />
+        <folder expanded="1" path="animation-folder/moregames2/" />
+        <folder expanded="1" path="animation-folder/ButtonHelp/" />
+    </folders-expanded>
+</c2uistate>

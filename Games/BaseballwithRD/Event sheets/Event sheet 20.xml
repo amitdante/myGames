@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 20</name>
+    <events>
+        <include>MainSheet</include>
+        <event-block sid="1588130444029904">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8671596760172488" type="System">
+                    <param id="0" name="Variable">LevelComplete</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="643340513744191" type="Unlocked">
+                    <param id="0" name="X">21</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="9520080093277074">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4492642869973499" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="8158621375234805" type="Stars">
+                            <param id="0" name="X">20</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="5652955737918957" type="LevelStars">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4610283471058849">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3118891667604262" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="2946345355093873" type="Stars">
+                            <param id="0" name="X">20</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="5874861869703568" type="LevelStars">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1928417328106182">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3633000215135544" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="6537366306546617" type="Stars">
+                            <param id="0" name="X">20</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7411611013510711" type="LevelStars">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9155771551723534">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="444112957881513" type="ball">
+                    <param id="0" name="Object">PEnter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="2580382584498965" type="ball">
+                    <param id="0" name="X">PExit.X</param>
+                    <param id="1" name="Y">PExit.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8788012129687823" type="PEnter" />
+            </actions>
+        </event-block>
+        <event-block sid="6352635527027035">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5261403821789493" type="ball">
+                    <param id="0" name="Object">PExit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6258471631921389" type="PExit" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

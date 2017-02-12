@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LoaderSheet</name>
+    <events>
+        <event-block sid="9893181435100572">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="1458627374585815" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9990018484886577" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

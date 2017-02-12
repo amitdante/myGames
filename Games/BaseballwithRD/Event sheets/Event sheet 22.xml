@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 22</name>
+    <events>
+        <include>MainSheet</include>
+        <event-block sid="3516084087346645">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3281591998688128" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="6157597614713823" type="System">
+                    <param id="0" name="Object to create">ElecShort</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">316</param>
+                    <param id="3" name="Y">131</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="7523818262009538" type="ElecShort" />
+                <action id="-16" name="Wait" sid="6206506078298583" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4740749287787208" type="ElecShort" />
+            </actions>
+        </event-block>
+        <event-block sid="3736394987671149">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="120542465176296" type="System">
+                    <param id="0" name="Variable">LevelComplete</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="8722721144541194" type="Unlocked">
+                    <param id="0" name="X">23</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3272951818633801">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2404258623569602" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="8301862126114622" type="Stars">
+                            <param id="0" name="X">22</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="1072092755041915" type="LevelStars">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7066389561897141">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5342258048836522" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="8157582216525449" type="Stars">
+                            <param id="0" name="X">22</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="4297881998545098" type="LevelStars">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7433492756867296">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8729181500910469" type="System">
+                            <param id="0" name="Variable">BallsUsed</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="4255783882744673" type="Stars">
+                            <param id="0" name="X">22</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="1104125926126837" type="LevelStars">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5989799388620284">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="408846394944796" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4561607346471827" type="System">
+                    <param id="0" name="Object to create">ElecShort</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">316</param>
+                    <param id="3" name="Y">131</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="4861939793597687" type="ElecShort" />
+                <action id="-16" name="Wait" sid="4182102354997213" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8700139334340231" type="ElecShort" />
+            </actions>
+        </event-block>
+        <event-block sid="8546999659425508">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="861527192646954" type="System">
+                    <param id="0" name="Interval (seconds)">2.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="5509450406991449" type="System">
+                    <param id="0" name="Object to create">ElecLong</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">594</param>
+                    <param id="3" name="Y">199</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="5227257600784941" type="ElecLong" />
+                <action id="-16" name="Wait" sid="939142386046864" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7120407183315639" type="ElecLong" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

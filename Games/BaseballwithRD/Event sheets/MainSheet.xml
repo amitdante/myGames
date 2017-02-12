@@ -1,0 +1,2546 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainSheet</name>
+    <events>
+        <variable constant="0" name="jokersKilled" sid="5413234905235463" static="0" type="number">0</variable>
+        <variable constant="0" name="ach15" sid="8870989745312364" static="0" type="number">0</variable>
+        <variable constant="0" name="ach14" sid="8805759910859303" static="0" type="number">0</variable>
+        <variable constant="0" name="ach13" sid="3940256766026944" static="0" type="number">0</variable>
+        <variable constant="0" name="ach12" sid="3086364517150504" static="0" type="number">0</variable>
+        <variable constant="0" name="ach11" sid="3465685280379403" static="0" type="number">0</variable>
+        <variable constant="0" name="ach10" sid="281137786516495" static="0" type="number">0</variable>
+        <variable constant="0" name="ach9" sid="6773793672688738" static="0" type="number">0</variable>
+        <variable constant="0" name="ach8" sid="7446502494847099" static="0" type="number">0</variable>
+        <variable constant="0" name="ach7" sid="4115459600736527" static="0" type="number">0</variable>
+        <variable constant="0" name="ach6" sid="4706582517525222" static="0" type="number">0</variable>
+        <variable constant="0" name="ach5" sid="9575530989202475" static="0" type="number">0</variable>
+        <variable constant="0" name="ach4" sid="2367616308199894" static="0" type="number">0</variable>
+        <variable constant="0" name="ach3" sid="3790338363863443" static="0" type="number">0</variable>
+        <variable constant="0" name="ach2" sid="176548602880958" static="0" type="number">0</variable>
+        <variable constant="0" name="ach1" sid="1045261289692824" static="0" type="number">0</variable>
+        <variable constant="0" name="BalloverScreen" sid="8875715675575132" static="0" type="number">0</variable>
+        <variable constant="0" name="currenty" sid="2892066044404865" static="0" type="number">0</variable>
+        <variable constant="0" name="currentx" sid="1568333413509451" static="0" type="number">0</variable>
+        <variable constant="0" name="Collided" sid="7141294231170667" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchEndY" sid="3899653304418001" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchEndX" sid="1526205871372928" static="0" type="number">0</variable>
+        <variable constant="0" name="touchy" sid="3605650893553838" static="0" type="number">0</variable>
+        <variable constant="0" name="touchx" sid="8823780747958179" static="0" type="number">0</variable>
+        <variable constant="0" name="Icollision" sid="4344989495858432" static="0" type="number">0</variable>
+        <variable constant="0" name="controlActive" sid="9754340061531718" static="0" type="number">1</variable>
+        <variable constant="0" name="EnemyCount" sid="9198981450874903" static="0" type="number">0</variable>
+        <variable constant="0" name="LevelComplete" sid="2809782359266108" static="0" type="number">0</variable>
+        <variable constant="0" name="Inbound" sid="9224642795008388" static="0" type="number">1</variable>
+        <variable constant="0" name="Score" sid="5411353956629459" static="0" type="number">0</variable>
+        <variable constant="0" name="BallsUsed" sid="7500691758816077" static="0" type="number">0</variable>
+        <variable constant="0" name="mousey" sid="4652090050113646" static="0" type="number">0</variable>
+        <variable constant="0" name="mousex" sid="9998228607874583" static="0" type="number">0</variable>
+        <variable constant="0" name="TouchActive" sid="2654280005701537" static="0" type="number">0</variable>
+        <include>Henk</include>
+        <event-block sid="9979862203180937">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5423491823977165" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set object scale ratio" sid="3953295905725488" type="Henk">
+                    <param id="0" name="Scale Ratio">0.35</param>
+                    <param id="1" name="Flip X Axis">0</param>
+                    <param id="2" name="Flip Y Axis">0</param>
+                </action>
+                <action id="9" name="Set scale" sid="2071726221533878" type="Joker">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action behavior="Physics" id="12" name="Set world gravity" sid="141448910855562" type="Boundary">
+                    <param id="0" name="Gravity">10</param>
+                </action>
+                <action id="-9" name="Set value" sid="6828732610156667" type="System">
+                    <param id="0" name="Variable">BallsUsed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2739976586930043" type="System">
+                    <param id="0" name="Variable">Inbound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5891543056554207" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">Joker.Count</param>
+                </action>
+                <action id="-9" name="Set value" sid="2254650327508176" type="System">
+                    <param id="0" name="Variable">LevelComplete</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6415736808071883" type="System">
+                    <param id="0" name="Variable">controlActive</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5827899553365892" type="System">
+                    <param id="0" name="Variable">PauseClicked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6739614225159207" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9090948622505591" type="System">
+                    <param id="0" name="Variable">BalloverScreen</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="1121501284818423" type="System">
+                    <param id="0" name="Object to create">BallHUD</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">70</param>
+                    <param id="3" name="Y">430</param>
+                </action>
+                <action id="-3" name="Create object" sid="1952723631383477" type="System">
+                    <param id="0" name="Object to create">BallHUD</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">95</param>
+                    <param id="3" name="Y">430</param>
+                </action>
+                <action id="-3" name="Create object" sid="2422907971414551" type="System">
+                    <param id="0" name="Object to create">BallHUD</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">120</param>
+                    <param id="3" name="Y">430</param>
+                </action>
+                <action id="-3" name="Create object" sid="7193152386324977" type="System">
+                    <param id="0" name="Object to create">BallHUD</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">145</param>
+                    <param id="3" name="Y">430</param>
+                </action>
+                <action id="-3" name="Create object" sid="489929212281224" type="System">
+                    <param id="0" name="Object to create">PRestart</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">510</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="-3" name="Create object" sid="1094319106980515" type="System">
+                    <param id="0" name="Object to create">PResume</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="9" name="Set scale" sid="2763649030879509" type="PResume">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+                <action id="-3" name="Create object" sid="8518729613647169" type="System">
+                    <param id="0" name="Object to create">PMenu</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">290</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="-3" name="Create object" sid="494640678763177" type="System">
+                    <param id="0" name="Object to create">ImageHenk</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">-150</param>
+                </action>
+                <action id="-3" name="Create object" sid="2051376766872384" type="System">
+                    <param id="0" name="Object to create">Next</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="-3" name="Create object" sid="9696290720367961" type="System">
+                    <param id="0" name="Object to create">Menu</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">290</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="-3" name="Create object" sid="2473414221635116" type="System">
+                    <param id="0" name="Object to create">Restart</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">510</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="-3" name="Create object" sid="7870759162893151" type="System">
+                    <param id="0" name="Object to create">LevelStars</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">LayoutWidth/2</param>
+                    <param id="3" name="Y">LayoutHeight/2+75</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7442739551460897" type="LevelStars">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="93805694775617" type="System">
+                    <param id="0" name="Object to create">SpriteFont</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">665</param>
+                    <param id="3" name="Y">3</param>
+                </action>
+                <action id="0" name="Set text" sid="7627250578519207" type="SpriteFont">
+                    <param id="0" name="Text">&quot;SCORE: &quot;&amp;Score</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="884213965130962" type="VMachine" />
+                <action id="-3" name="Set position" sid="8170236616788827" type="PauseBtn">
+                    <param id="0" name="X">775</param>
+                    <param id="1" name="Y">427</param>
+                </action>
+                <action id="-3" name="Create object" sid="4747844759781238" type="System">
+                    <param id="0" name="Object to create">KIZ10Logo</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">429</param>
+                </action>
+                <action id="-3" name="Create object" sid="300669471350404" type="System">
+                    <param id="0" name="Object to create">FailHelp</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="8051422233640254" type="KIZ10Logo" />
+                <action id="-3" name="Create object" sid="7812324990238578" type="System">
+                    <param id="0" name="Object to create">ButtonHelp</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">730</param>
+                    <param id="3" name="Y">427</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="7854823765383925" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">Stars.At(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="520778938633885" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0001</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6144188506942154">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9272445118708586" type="System">
+                            <param id="0" name="Variable">TouchActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="8001469857278709" type="System">
+                            <param id="0" name="Object to create">TiledBackground</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Henk.X+20</param>
+                            <param id="3" name="Y">Henk.Y-70</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5328322632530412">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4839001455482055" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4384426565862107" type="SpriteFont">
+                    <param id="0" name="Text">&quot;SCORE: &quot;&amp;Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5967053029219699">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7720555958673812" type="System" />
+                <condition id="-14" name="Compare variable" sid="2152820105616883" type="System">
+                    <param id="0" name="Variable">Inbound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1800019028182102" type="System">
+                    <param id="0" name="Variable">mousex</param>
+                    <param id="1" name="Value">Mouse.X-Henk.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="1663135976120587" type="System">
+                    <param id="0" name="Variable">mousey</param>
+                    <param id="1" name="Value">Henk.Y-Mouse.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="8700542681616729" type="TiledBackground">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8032124035119497">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6125220495008139" type="System">
+                            <param id="0" name="Variable">mousex</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">mousey</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="1820523896801288" type="TiledBackground">
+                            <param id="0" name="Width">mousex</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7441434019125541">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8664429619844668" type="System">
+                            <param id="0" name="Variable">mousey</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">mousex</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="4182029264264085" type="TiledBackground">
+                            <param id="0" name="Width">mousey</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1240771165702179">
+            <conditions>
+                <condition id="1" name="On any click" sid="5795003792344112" type="Mouse" />
+                <condition id="-14" name="Compare variable" sid="9972259624929948" type="System">
+                    <param id="0" name="Variable">BallsUsed</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5653195763541603" type="System">
+                    <param id="0" name="Variable">Inbound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3115990979618884" type="System">
+                    <param id="0" name="Variable">controlActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2114117196947086" type="System">
+                    <param id="0" name="Variable">currentx</param>
+                    <param id="1" name="Value">Mouse.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="5763154734406362" type="System">
+                    <param id="0" name="Variable">currenty</param>
+                    <param id="1" name="Value">Mouse.Y</param>
+                </action>
+                <action id="0" name="Set animation" sid="9650873786530239" type="Henk">
+                    <param id="0" name="Animation">&quot;Shoot&quot;</param>
+                    <param id="1" name="Where to start playing this animation">0</param>
+                    <param id="2" name="Blend Duration">0</param>
+                </action>
+                <action id="0" name="Play" sid="1006467250775785" type="Audio">
+                    <param id="0" name="Audio file">Grunt</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2951781614102182" type="Audio">
+                    <param id="0" name="Audio file">Woosh</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="854622354715464" type="System">
+                    <param id="0" name="Seconds">0.45</param>
+                </action>
+                <action id="0" name="Play" sid="5082106269021091" type="Audio">
+                    <param id="0" name="Audio file">BaseballHit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="865887949250995" type="System">
+                    <param id="0" name="Object to create">ball</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">Henk.X+20</param>
+                    <param id="3" name="Y">Henk.Y-70</param>
+                </action>
+                <action behavior="Physics" id="1" name="Apply force towards position" sid="7233422382845203" type="ball">
+                    <param id="0" name="Force">0.25*max(mousex,mousey)</param>
+                    <param id="1" name="X">currentx</param>
+                    <param id="2" name="Y">currenty</param>
+                    <param id="3" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="3005733541011084" type="Trail">
+                    <param id="0" name="Pin to">ball</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="3926576710079771" type="System">
+                    <param id="0" name="Variable">BallsUsed</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="9678582616239058" type="System">
+                    <param id="0" name="Seconds">0.45</param>
+                </action>
+                <action id="0" name="Set animation" sid="2951395059340261" type="Henk">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="Where to start playing this animation">0</param>
+                    <param id="2" name="Blend Duration">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2720133355471937">
+                    <conditions>
+                        <condition id="-13" name="Pick nth instance" sid="7473395996049756" type="System">
+                            <param id="0" name="Object">BallHUD</param>
+                            <param id="1" name="Instance">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6937359311276755" type="BallHUD" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8524067759319467">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4617863194182012" type="ball">
+                    <param id="0" name="Object">Boundary</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="549614699463163" type="ball">
+                    <param id="0" name="Instance variable">BCollision</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8571666699910401">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5005368073953311" type="ball">
+                            <param id="0" name="Instance variable">BCollision</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7282786826005332" type="ball" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3767512100737655">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9239329108542228" type="ball">
+                    <param id="0" name="Object">Joker</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7072198485169875" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3759732283839482" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="3470750002174708" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-10" name="Add to" sid="7867198247919169" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="6610813428091402" type="Audio">
+                    <param id="0" name="Audio file">German_dying2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8126398129469725" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-3" name="Create object" sid="3454233237250025" type="System">
+                    <param id="0" name="Object to create">Torso</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">Joker.X</param>
+                    <param id="3" name="Y">Joker.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3980444651026279" type="Joker" />
+                <action id="0" name="Spawn another object" sid="4080997594149149" type="Torso">
+                    <param id="0" name="Object">Head</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2616904030142852" type="Torso">
+                    <param id="0" name="Object">LHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9390181793535509" type="Torso">
+                    <param id="0" name="Object">RHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4186389966660494" type="Torso">
+                    <param id="0" name="Object">Lleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6245758502170986" type="Torso">
+                    <param id="0" name="Object">Rleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">4</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="498769405730962" type="LHand">
+                    <param id="0" name="Object">Baloon</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="5459989960140109" type="Head">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="7000590106034286" type="Torso">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="9409423967560914" type="Baloon">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="9114863415265269" type="RHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="7818952328038788" type="LHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="5794289563405214" type="Lleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="52364265897085" type="Rleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="2162610033403243" type="Baloon">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="8868993296381656" type="Baloon">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="5766010726933343" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7867517779869737" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="6759904829713647" type="Audio">
+                    <param id="0" name="Audio file">Clown_mask_pick_up_from_box_rubber_bald_BLASTWAVEF</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="6802830071094459" type="Torso">
+                    <param id="0" name="This image point">5</param>
+                    <param id="1" name="Object">Head</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="8168167495276948" type="Torso">
+                    <param id="0" name="This image point">1</param>
+                    <param id="1" name="Object">LHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="4986720216827431" type="Torso">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">RHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="5937001156566018" type="Torso">
+                    <param id="0" name="This image point">3</param>
+                    <param id="1" name="Object">Lleg</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="1834187744275691" type="Torso">
+                    <param id="0" name="This image point">4</param>
+                    <param id="1" name="Object">Rleg</param>
+                </action>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="9255859890785417" type="Torso">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">random(-8,-15)</param>
+                    <param id="2" name="Image point">random(-5,5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6916035917415452">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="7466584662710143" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="5601393363360154" type="System">
+                    <param id="0" name="Variable">TouchActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4321323641175691" type="System">
+                    <param id="0" name="Variable">controlActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8660978741009673" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Henk.X+20</param>
+                    <param id="3" name="Y">Henk.Y-70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4624651913799696">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7121101081331407" type="System" />
+                <condition id="-14" name="Compare variable" sid="4265708634637471" type="System">
+                    <param id="0" name="Variable">TouchActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9654270880251305" type="System">
+                    <param id="0" name="Variable">mousex</param>
+                    <param id="1" name="Value">Touch.X-Henk.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="7793678238254524" type="System">
+                    <param id="0" name="Variable">mousey</param>
+                    <param id="1" name="Value">Henk.Y-Touch.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="5616734605110356" type="TiledBackground">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="189762416218557">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="412611779716827" type="System">
+                            <param id="0" name="Variable">mousex</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">mousey</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="5808429450632721" type="TiledBackground">
+                            <param id="0" name="Width">mousex</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4071221387112268">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9005111888279441" type="System">
+                            <param id="0" name="Variable">mousey</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">mousex</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="1158029690094514" type="TiledBackground">
+                            <param id="0" name="Width">mousey</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8941549990962317">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="2945349999213324" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="573139201767739" type="System">
+                    <param id="0" name="Variable">BallsUsed</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6803061459853439" type="System">
+                    <param id="0" name="Variable">TouchActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5123506441234674" type="System">
+                    <param id="0" name="Variable">controlActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7718230907166538" type="System">
+                    <param id="0" name="Variable">TouchEndX</param>
+                    <param id="1" name="Value">mousex</param>
+                </action>
+                <action id="-9" name="Set value" sid="6110241618941183" type="System">
+                    <param id="0" name="Variable">TouchEndY</param>
+                    <param id="1" name="Value">mousey</param>
+                </action>
+                <action id="-9" name="Set value" sid="2659237371286009" type="System">
+                    <param id="0" name="Variable">touchx</param>
+                    <param id="1" name="Value">Touch.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="3677837788957437" type="System">
+                    <param id="0" name="Variable">touchy</param>
+                    <param id="1" name="Value">Touch.Y</param>
+                </action>
+                <action id="0" name="Set animation" sid="522213320781492" type="Henk">
+                    <param id="0" name="Animation">&quot;Shoot&quot;</param>
+                    <param id="1" name="Where to start playing this animation">0</param>
+                    <param id="2" name="Blend Duration">0</param>
+                </action>
+                <action id="0" name="Play" sid="9721212274527517" type="Audio">
+                    <param id="0" name="Audio file">Grunt</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="6675591714969916" type="Audio">
+                    <param id="0" name="Audio file">Woosh</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="5549083214037888" type="System">
+                    <param id="0" name="Seconds">0.45</param>
+                </action>
+                <action id="0" name="Play" sid="8983432309934722" type="Audio">
+                    <param id="0" name="Audio file">BaseballHit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="1033168413261885" type="System">
+                    <param id="0" name="Object to create">ball</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">Henk.X+20</param>
+                    <param id="3" name="Y">Henk.Y-70</param>
+                </action>
+                <action behavior="Physics" id="1" name="Apply force towards position" sid="7992574206912733" type="ball">
+                    <param id="0" name="Force">0.25*max(TouchEndX,TouchEndY)</param>
+                    <param id="1" name="X">touchx</param>
+                    <param id="2" name="Y">touchy</param>
+                    <param id="3" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7860612119865571" type="Trail">
+                    <param id="0" name="Pin to">ball</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="4692623226059929" type="System">
+                    <param id="0" name="Variable">BallsUsed</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4237242747831476" type="System">
+                    <param id="0" name="Seconds">0.45</param>
+                </action>
+                <action id="0" name="Set animation" sid="3795104256085277" type="Henk">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="Where to start playing this animation">0</param>
+                    <param id="2" name="Blend Duration">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="9618692296681275">
+                    <conditions>
+                        <condition id="-13" name="Pick nth instance" sid="2520790062508913" type="System">
+                            <param id="0" name="Object">BallHUD</param>
+                            <param id="1" name="Instance">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6109542346126593" type="BallHUD" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6383603277636101">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="6526671792281355" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="1179452142516435" type="System">
+                    <param id="0" name="Variable">TouchActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="270018471770181" type="TiledBackground" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="6846824863652006">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5056523606149475" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PauseBtn</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="1529177787264783" type="Touch">
+                    <param id="0" name="Object">PauseBtn</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2669686144766371">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2163201998177625" type="System">
+                            <param id="0" name="Variable">PauseClicked</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8044521733475176" type="System">
+                            <param id="0" name="Variable">PauseClicked</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2733037209723509" type="Audio">
+                            <param id="0" name="Audio file">Button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="45724619872493" type="System">
+                            <param id="0" name="Variable">controlActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="6666843734717001" type="PauseBtn">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="1339593425346542" type="System">
+                            <param id="0" name="Object to create">PauseBG</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="X">LayoutWidth/2</param>
+                            <param id="3" name="Y">LayoutHeight/2</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="5406356172399224" type="PauseBG" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="8108861972816744" type="PauseBG">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="4661507951654592" type="Audio">
+                            <param id="0" name="Audio file">woosh_9</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="9227600786349193" type="PRestart">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="6739965093872973" type="Audio">
+                            <param id="0" name="Audio file">woosh_9</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="3719663000842032" type="PResume">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="1345451091192088" type="Audio">
+                            <param id="0" name="Audio file">woosh_9</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="9263236014045435" type="PMenu">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="9557822250571702" type="Audio">
+                            <param id="0" name="Audio file">woosh_9</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="2610369917602958" type="ImageHenk">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="1908078510884645" type="System">
+                            <param id="0" name="Object to create">moregames2</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="X">490</param>
+                            <param id="3" name="Y">90</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8883504958181431" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="2645209759208101" type="PauseBtn">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="181164272458712">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5339781636885107" type="Mouse">
+                    <param id="0" name="Object">PauseBtn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9506657271234821" type="System">
+                    <param id="0" name="Variable">Inbound</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4520932644969276">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="7943952860288096" type="Mouse">
+                    <param id="0" name="Object">PauseBtn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4335496579337998" type="System">
+                    <param id="0" name="Variable">Inbound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5108274234930177">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2593577731483269" type="Mouse">
+                    <param id="0" name="Object">PResume</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="7558227375234499" type="PResume">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="619642052935795">
+            <conditions>
+                <condition id="-22" name="Else" sid="4660247572961993" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="47573015601228" type="PResume">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2092156442885129">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5836630224616065" type="Mouse">
+                    <param id="0" name="Object">PRestart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="5696752008799017" type="PRestart">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6472166157875593">
+            <conditions>
+                <condition id="-22" name="Else" sid="8976483116320493" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="3767444884147365" type="PRestart">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2664328715815295">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1318853999157404" type="Mouse">
+                    <param id="0" name="Object">PMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="6490266521092981" type="PMenu">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2238148374227134">
+            <conditions>
+                <condition id="-22" name="Else" sid="8489312737735458" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="9895874666451611" type="PMenu">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8123410597457573">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6333561658879664" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1004684387241145" type="System">
+                    <param id="0" name="Variable">LevelComplete</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5027394814471282" type="System">
+                    <param id="0" name="Variable">PauseClicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9399484800575848" type="System">
+                    <param id="0" name="Variable">LevelComplete</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3749625444721049" type="System">
+                    <param id="0" name="Variable">controlActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="6679791512519411" type="System">
+                    <param id="0" name="Object to create">LevelComplete</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">LayoutWidth/2</param>
+                    <param id="3" name="Y">LayoutHeight/2</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="8097810085757477" type="LevelComplete" />
+                <action id="0" name="Play" sid="2638657835674683" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="2850405308022644" type="LevelComplete">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="2776886055321177" type="ImageHenk">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="0" name="Play" sid="8900596185851235" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="4265313061962901" type="Next">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="0" name="Play" sid="2259651636904561" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="895917408670306" type="Menu">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="0" name="Play" sid="2875962703522735" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="360079722028216" type="Restart">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6788210884492581" type="LevelStars">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="1776906357086826" type="LevelStars">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="2" name="Set at X" sid="7443062685801674" type="Stars">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">Score</param>
+                </action>
+                <action id="-3" name="Create object" sid="8951340683535135" type="System">
+                    <param id="0" name="Object to create">Win</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">480</param>
+                    <param id="3" name="Y">95</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4154829484316218">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2500364230845178" type="Mouse">
+                    <param id="0" name="Object">Next</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="4404520755419718" type="Next">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9666026102353604">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="5054876914907842" type="Mouse">
+                    <param id="0" name="Object">Next</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="9751333165252904" type="Next">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3442560313234732">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1043102690455233" type="Mouse">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="2282305069605501" type="Menu">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7579588455321683">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8354950806352835" type="Mouse">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="4889192967288518" type="Menu">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6736868469373429">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="6412643216243412" type="Mouse">
+                    <param id="0" name="Object">Restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="1951248672236632" type="Restart">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4081107121750913">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="3326369336016766" type="Mouse">
+                    <param id="0" name="Object">Restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="8961358278889878" type="Restart">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7407539241902215">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2444969434191566" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PRestart</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="3035390714727054" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Restart</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="9710580568003384" type="Touch">
+                    <param id="0" name="Object">PRestart</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="4595987894139292" type="Touch">
+                    <param id="0" name="Object">Restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1850827609656276" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="89012902313959" type="System">
+                    <param id="0" name="Object to create">OverlayBG</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">LayoutWidth/2</param>
+                    <param id="3" name="Y">LayoutHeight/2</param>
+                </action>
+                <action id="-3" name="Create object" sid="7184874749985082" type="System">
+                    <param id="0" name="Object to create">OverlayBall</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">-300</param>
+                    <param id="3" name="Y">800</param>
+                </action>
+                <action id="-16" name="Wait" sid="7724511157428695" type="System">
+                    <param id="0" name="Seconds">1.8</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="8772292174374279" type="System" />
+                <action id="0" name="Set item" sid="592703652822902" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Stars&quot;</param>
+                    <param id="1" name="Value">Stars.AsJSON</param>
+                </action>
+                <action id="0" name="Set item" sid="8027852761096259" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Unlocked&quot;</param>
+                    <param id="1" name="Value">Unlocked.AsJSON</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="1987376393512385">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6914872560289919" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PResume</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="3325588278637338" type="Touch">
+                    <param id="0" name="Object">PResume</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2831077459539056" type="System">
+                    <param id="0" name="Variable">PauseClicked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3134566354084683" type="System">
+                    <param id="0" name="Variable">BalloverScreen</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="6573673192665918" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="5186271251568886" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9970177448453201" type="moregames2" />
+                <action behavior="LiteTween" id="11" name="Reverse" sid="6153743913875238" type="ImageHenk">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="0" name="Play" sid="7612633328215379" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="11" name="Reverse" sid="7511473998796018" type="PMenu">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="0" name="Play" sid="4519627380853908" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="11" name="Reverse" sid="1198278932391949" type="PRestart">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="0" name="Play" sid="9162513774131418" type="Audio">
+                    <param id="0" name="Audio file">woosh_9</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="11" name="Reverse" sid="7911940873071131" type="PResume">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6261035451618926" type="System">
+                    <param id="0" name="Variable">controlActive</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8619704181373547" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9892545648974479" type="PauseBG" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="830592704262586">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8120880855071849" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Menu</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="89238048120552" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PMenu</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="7414176052742596" type="Touch">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="5518572626137264" type="Touch">
+                    <param id="0" name="Object">PMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8603241243384117" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="5754683938463082" type="System">
+                    <param id="0" name="Object to create">OverlayBG</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">LayoutWidth/2</param>
+                    <param id="3" name="Y">LayoutHeight/2</param>
+                </action>
+                <action id="-3" name="Create object" sid="1541982040993987" type="System">
+                    <param id="0" name="Object to create">OverlayBall</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">-300</param>
+                    <param id="3" name="Y">800</param>
+                </action>
+                <action id="-16" name="Wait" sid="6812226486816364" type="System">
+                    <param id="0" name="Seconds">1.8</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6661414685775979" type="System">
+                    <param id="0" name="Layout">LevelSelect</param>
+                </action>
+                <action id="0" name="Set item" sid="8815320140353304" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Stars&quot;</param>
+                    <param id="1" name="Value">Stars.AsJSON</param>
+                </action>
+                <action id="0" name="Set item" sid="7849034594531555" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Unlocked&quot;</param>
+                    <param id="1" name="Value">Unlocked.AsJSON</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7277077473027261">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8823536715317207" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Next</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="8283085248936356" type="Touch">
+                    <param id="0" name="Object">Next</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1913623320845999" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="1006777317347072" type="System">
+                    <param id="0" name="Object to create">OverlayBG</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">LayoutWidth/2</param>
+                    <param id="3" name="Y">LayoutHeight/2</param>
+                </action>
+                <action id="-3" name="Create object" sid="4477539180082242" type="System">
+                    <param id="0" name="Object to create">OverlayBall</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">-300</param>
+                    <param id="3" name="Y">800</param>
+                </action>
+                <action id="-16" name="Wait" sid="7001566084828663" type="System">
+                    <param id="0" name="Seconds">1.8</param>
+                </action>
+                <action id="-43" name="Go to next/previous layout" sid="346230198862032" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+                <action id="0" name="Set item" sid="3525538140765432" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Stars&quot;</param>
+                    <param id="1" name="Value">Stars.AsJSON</param>
+                </action>
+                <action id="0" name="Set item" sid="4290075897771049" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Unlocked&quot;</param>
+                    <param id="1" name="Value">Unlocked.AsJSON</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="3799262013746176">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4157590133936621" type="ball">
+                    <param id="0" name="Object">IronP</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="2479535682082907" type="ball">
+                    <param id="0" name="Object">Concrete</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="6355774556087306" type="ball">
+                    <param id="0" name="Instance variable">Icollision</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1179036092087338">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7201484730082433" type="ball">
+                            <param id="0" name="Instance variable">Icollision</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7057278982196549" type="ball" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6007317374661567">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8357791015763879" type="Baloon">
+                    <param id="0" name="Object">Boundary</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="3650499240704889" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3667036886368728" type="Baloon" />
+            </actions>
+        </event-block>
+        <event-block sid="1738750890240265">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4590372577686055" type="Tire">
+                    <param id="0" name="Object">Joker</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9668772841742599" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2260425297282319" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="994303202274986" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-10" name="Add to" sid="6326847153092545" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="611057377198989" type="Audio">
+                    <param id="0" name="Audio file">German_dying2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8702923855339552" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-3" name="Create object" sid="36916748049873" type="System">
+                    <param id="0" name="Object to create">Torso</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">Joker.X</param>
+                    <param id="3" name="Y">Joker.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4178124806510611" type="Joker" />
+                <action id="0" name="Spawn another object" sid="163012767983811" type="Torso">
+                    <param id="0" name="Object">Head</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2634470426675234" type="Torso">
+                    <param id="0" name="Object">LHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2698515604896344" type="Torso">
+                    <param id="0" name="Object">RHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9075129045228997" type="Torso">
+                    <param id="0" name="Object">Lleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8945312841147776" type="Torso">
+                    <param id="0" name="Object">Rleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">4</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6358356112415307" type="LHand">
+                    <param id="0" name="Object">Baloon</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="8807886087729064" type="Head">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="4863734505352785" type="Torso">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="8553551336468738" type="Baloon">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="7029517791132568" type="RHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="8838493833704506" type="LHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="4246818812693146" type="Lleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="7729303584849903" type="Rleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8185334503607431" type="Baloon">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="8591781841276375" type="Baloon">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="7420784110493143" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6480395297229042" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="8945205705118195" type="Audio">
+                    <param id="0" name="Audio file">Clown_mask_pick_up_from_box_rubber_bald_BLASTWAVEF</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="1304192722787499" type="Torso">
+                    <param id="0" name="This image point">5</param>
+                    <param id="1" name="Object">Head</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="8347543130081429" type="Torso">
+                    <param id="0" name="This image point">1</param>
+                    <param id="1" name="Object">LHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="6199493894860673" type="Torso">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">RHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="8098051159575008" type="Torso">
+                    <param id="0" name="This image point">3</param>
+                    <param id="1" name="Object">Lleg</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="1842983918372887" type="Torso">
+                    <param id="0" name="This image point">4</param>
+                    <param id="1" name="Object">Rleg</param>
+                </action>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="6600888861657151" type="Torso">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">random(-8,-15)</param>
+                    <param id="2" name="Image point">random(-5,5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7899760553603886">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1956382679123491" type="KillerBlock">
+                    <param id="0" name="Object">Joker</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3800526416542266" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6007776164657081" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="8577758665627247" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-10" name="Add to" sid="1365157764707396" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="8802500083074584" type="Audio">
+                    <param id="0" name="Audio file">German_dying2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="3195866128554745" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-3" name="Create object" sid="630589971533097" type="System">
+                    <param id="0" name="Object to create">Torso</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">Joker.X</param>
+                    <param id="3" name="Y">Joker.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2345093556097044" type="Joker" />
+                <action id="0" name="Spawn another object" sid="7987965499722356" type="Torso">
+                    <param id="0" name="Object">Head</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1454205039531657" type="Torso">
+                    <param id="0" name="Object">LHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3758958581510356" type="Torso">
+                    <param id="0" name="Object">RHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8524441023579696" type="Torso">
+                    <param id="0" name="Object">Lleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4072273941009878" type="Torso">
+                    <param id="0" name="Object">Rleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">4</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4758767041948025" type="LHand">
+                    <param id="0" name="Object">Baloon</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="6494023227747687" type="Head">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="7550937642625907" type="Torso">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="8089832420513682" type="Baloon">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="9652348232210136" type="RHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="9730595221942213" type="LHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="1109901607301787" type="Lleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="1596475853003052" type="Rleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8945058174968097" type="Baloon">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="2519670176151928" type="Baloon">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="6801803894573304" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4960377584102889" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="5011068589162563" type="Audio">
+                    <param id="0" name="Audio file">Clown_mask_pick_up_from_box_rubber_bald_BLASTWAVEF</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="7957489627632136" type="Torso">
+                    <param id="0" name="This image point">5</param>
+                    <param id="1" name="Object">Head</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="2940221216779735" type="Torso">
+                    <param id="0" name="This image point">1</param>
+                    <param id="1" name="Object">LHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="4999195821317702" type="Torso">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">RHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="9286556527430384" type="Torso">
+                    <param id="0" name="This image point">3</param>
+                    <param id="1" name="Object">Lleg</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="7452461459031315" type="Torso">
+                    <param id="0" name="This image point">4</param>
+                    <param id="1" name="Object">Rleg</param>
+                </action>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="9396258194037046" type="Torso">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">random(-8,-15)</param>
+                    <param id="2" name="Image point">random(-5,5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="5974868965176403">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8299180308484088" type="Domino">
+                    <param id="0" name="Object">ball</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="8776169512549138" type="Domino">
+                    <param id="0" name="Object">Domino</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="7226650846655838" type="Domino">
+                    <param id="0" name="Object">Tire</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="4027026075867407" type="Domino">
+                    <param id="0" name="Object">KillerBlock</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="5911454594922356" type="Domino">
+                    <param id="0" name="Object">Joker</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6237194453415478" type="Audio">
+                    <param id="0" name="Audio file">GlassHit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="4409387889679535" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="0" name="Play" sid="7525759409218248" type="Audio">
+                    <param id="0" name="Audio file">GlassShatter</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1335777575360848" type="Domino">
+                    <param id="0" name="Object">P1</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3801015910368614" type="Domino">
+                    <param id="0" name="Object">P2</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3783804918449283" type="Domino">
+                    <param id="0" name="Object">P3</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3923973665733152" type="Domino">
+                    <param id="0" name="Object">P4</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9029245006477496" type="Domino">
+                    <param id="0" name="Object">P5</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">4</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3048940855275978" type="Domino" />
+                <action id="-16" name="Wait" sid="5917625842146034" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5407088058769698" type="P3" />
+                <action id="-9" name="Destroy" sid="8794555991401029" type="P1" />
+                <action id="-9" name="Destroy" sid="5958529364135403" type="P2" />
+                <action id="-9" name="Destroy" sid="6893609086054344" type="P4" />
+                <action id="-9" name="Destroy" sid="3447507187170428" type="P5" />
+            </actions>
+        </event-block>
+        <event-block sid="262552848779806">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8720575125292084" type="Domino">
+                    <param id="0" name="Object">Joker</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4514741799524581" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3482760788458751" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="3375830129072901" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="-10" name="Add to" sid="92016996308007" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="8497684048055377" type="Audio">
+                    <param id="0" name="Audio file">German_dying2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8922424730450604" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-3" name="Create object" sid="3187824529710389" type="System">
+                    <param id="0" name="Object to create">Torso</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">Joker.X</param>
+                    <param id="3" name="Y">Joker.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1707034817347321" type="Joker" />
+                <action id="0" name="Spawn another object" sid="4778969940255191" type="Torso">
+                    <param id="0" name="Object">Head</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8178478752181417" type="Torso">
+                    <param id="0" name="Object">LHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7816071538312477" type="Torso">
+                    <param id="0" name="Object">RHand</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5977359966977298" type="Torso">
+                    <param id="0" name="Object">Lleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3662374089305427" type="Torso">
+                    <param id="0" name="Object">Rleg</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">4</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="994026965865314" type="LHand">
+                    <param id="0" name="Object">Baloon</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="5866713067902602" type="Lleg" />
+                <action id="-25" name="Move to bottom" sid="6656757777647395" type="Rleg" />
+                <action id="-25" name="Move to bottom" sid="4343566145146859" type="LHand" />
+                <action id="-25" name="Move to bottom" sid="6333996824245206" type="RHand" />
+                <action id="9" name="Set scale" sid="9771130403482698" type="Head">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="7581550297342731" type="Torso">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="353679425539867" type="Baloon">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="7184588755792463" type="RHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="3429076688965312" type="LHand">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="3585731832696726" type="Lleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="9" name="Set scale" sid="6942913532430924" type="Rleg">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7299633137264469" type="Baloon">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="3370923406154417" type="Baloon">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="5590658168196971" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="1353118529009955" type="System">
+                    <param id="0" name="Variable">Collided</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="886425047623677" type="Audio">
+                    <param id="0" name="Audio file">Clown_mask_pick_up_from_box_rubber_bald_BLASTWAVEF</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="1456136283099644" type="Torso">
+                    <param id="0" name="This image point">5</param>
+                    <param id="1" name="Object">Head</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="9422367348921953" type="Torso">
+                    <param id="0" name="This image point">1</param>
+                    <param id="1" name="Object">LHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="2414744848559192" type="Torso">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">RHand</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="5408815916894742" type="Torso">
+                    <param id="0" name="This image point">3</param>
+                    <param id="1" name="Object">Lleg</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="7308038564532773" type="Torso">
+                    <param id="0" name="This image point">4</param>
+                    <param id="1" name="Object">Rleg</param>
+                </action>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="9072350246304629" type="Torso">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">random(-8,-15)</param>
+                    <param id="2" name="Image point">random(-5,5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="4179874067670694">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="377057482339076" type="ball">
+                    <param id="0" name="Object">ElecLong</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="504984317680224" type="ball">
+                    <param id="0" name="Object">ElecShort</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7337714134829023" type="ball" />
+                <action id="0" name="Play" sid="8494599291500317" type="Audio">
+                    <param id="0" name="Audio file">BallDestroy</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7789608710203774">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2344170967318962" type="Tire">
+                    <param id="0" name="Object">ElecLong</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="9643304193833438" type="Tire">
+                    <param id="0" name="Object">ElecShort</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6051192423322564" type="Tire" />
+                <action id="0" name="Play" sid="4905162555364962" type="Audio">
+                    <param id="0" name="Audio file">BallDestroy</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="2483809438389532">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8685637088742316" type="ball">
+                    <param id="0" name="Object">Boundary</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="4502801888456618" type="ball">
+                    <param id="0" name="Object">IronP</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="2706796654134202" type="ball">
+                    <param id="0" name="Object">Concrete</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="4842642791333508" type="ball">
+                    <param id="0" name="Object">Tire</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="8623939944487602" type="ball">
+                    <param id="0" name="Object">Wood</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="6714387824281878" type="ball">
+                    <param id="0" name="Object">Cloud</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7631889576397913">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="31668678305918" type="ball">
+                    <param id="0" name="Object">VMachine</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="1339063161879309" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">50</param>
+                </action>
+                <action id="0" name="Play" sid="5965333357940374" type="Audio">
+                    <param id="0" name="Audio file">INDUSTRY_GENERAL_VENDING_MACHINE_INSERT_COIN_01</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="9615683791950007" type="VMachine">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9794353487220776" type="VMachine">
+                    <param id="0" name="Object">Points</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="140042883191756" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="2591789217316409" type="VMachine">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="407401659507485">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2866778613686869" type="ball">
+                    <param id="0" name="Object">Concrete</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="6525554402560128" type="ball">
+                    <param id="0" name="Object">Boundary</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5892559980717149" type="Audio">
+                    <param id="0" name="Audio file">ConcreteHit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3630453076942943">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7261564957751081" type="ball">
+                    <param id="0" name="Object">IronP</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9707667960431431" type="Audio">
+                    <param id="0" name="Audio file">Iron_board_3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6165147999336288">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5298022913607016" type="ball">
+                    <param id="0" name="Object">PEnter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8663556535439987" type="Audio">
+                    <param id="0" name="Audio file">Portal</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3692847939485694">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="280909864762675" type="ball">
+                    <param id="0" name="Object">Switch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9988584211370036" type="Audio">
+                    <param id="0" name="Audio file">Switch</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7729135512212678">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="816736687653086" type="ball">
+                    <param id="0" name="Object">Tire</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2356263547904053" type="Audio">
+                    <param id="0" name="Audio file">TireHit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="8984909039878">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8322716428129999" type="ball">
+                    <param id="0" name="Object">Wood</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="8537336142516669" type="Wood">
+                    <param id="0" name="Object">Wood</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1169335626971032" type="Audio">
+                    <param id="0" name="Audio file">Wood_Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6348510820456264">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8533824583892272" type="System">
+                    <param id="0" name="Variable">BallsUsed</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7940170476469008" type="System">
+                    <param id="0" name="Variable">BalloverScreen</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4898408647444476" type="System">
+                    <param id="0" name="Variable">PauseClicked</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8216567986710403" type="System">
+                    <param id="0" name="Variable">BalloverScreen</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6108012690947159" type="System">
+                    <param id="0" name="Variable">controlActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="6106071347809098" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5578804851708002" type="System">
+                    <param id="0" name="Variable">PauseClicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6974443176326458">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7025381344413274" type="System">
+                            <param id="0" name="Variable">LevelComplete</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="6783278228819072" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="1611496729539489" type="System">
+                            <param id="0" name="Object to create">PauseBG</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="X">LayoutWidth/2</param>
+                            <param id="3" name="Y">LayoutHeight/2</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="4171380140282423" type="PauseBG" />
+                        <action behavior="LiteTween" id="10" name="Start" sid="5219266088857993" type="PauseBG">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="9371151599463346" type="Audio">
+                            <param id="0" name="Audio file">woosh_9</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="5299069579037848" type="PRestart">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="9600291084738868" type="Audio">
+                            <param id="0" name="Audio file">woosh_9</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="9934109808394135" type="PMenu">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="2546914133773762" type="Audio">
+                            <param id="0" name="Audio file">woosh_9</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="9295879680717901" type="ImageHenk">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="1390350752218254" type="FailHelp">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="876204373345307" type="System">
+                            <param id="0" name="Object to create">moregames2</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="X">490</param>
+                            <param id="3" name="Y">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="974823043520149">
+            <conditions>
+                <condition id="0" name="Compare at X" sid="8084569933344156" type="Unlocked">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6111815155788896" type="System">
+                    <param id="0" name="Variable">ach1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3831718719382108" type="System">
+                    <param id="0" name="Variable">ach1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6058988004357498">
+            <conditions>
+                <condition id="0" name="Compare at X" sid="5453874331660495" type="Unlocked">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7511107570019363" type="System">
+                    <param id="0" name="Variable">ach2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4441020235794675" type="System">
+                    <param id="0" name="Variable">ach2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="486659426226378">
+            <conditions>
+                <condition id="0" name="Compare at X" sid="5527799000874297" type="Unlocked">
+                    <param id="0" name="X">11</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4441723433146209" type="System">
+                    <param id="0" name="Variable">ach3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7538092950265189" type="System">
+                    <param id="0" name="Variable">ach3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="652161661830202">
+            <conditions>
+                <condition id="0" name="Compare at X" sid="7516321839282381" type="Unlocked">
+                    <param id="0" name="X">16</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4974797579197152" type="System">
+                    <param id="0" name="Variable">ach4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3014690082242928" type="System">
+                    <param id="0" name="Variable">ach4</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3542029616357104">
+            <conditions>
+                <condition id="0" name="Compare at X" sid="8307041182748827" type="Unlocked">
+                    <param id="0" name="X">21</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="226866592617319" type="System">
+                    <param id="0" name="Variable">ach5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2141216381989233" type="System">
+                    <param id="0" name="Variable">ach5</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7558528295564893">
+            <conditions>
+                <condition id="0" name="Compare at X" sid="392026990549077" type="Unlocked">
+                    <param id="0" name="X">26</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4196274979640673" type="System">
+                    <param id="0" name="Variable">ach6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1907938131371957" type="System">
+                    <param id="0" name="Variable">ach6</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3064308625241492">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="296254525683347" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3888039013631698" type="System">
+                    <param id="0" name="Variable">ach8</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9912934580704967" type="System">
+                    <param id="0" name="Variable">ach8</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2145165694991348">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6165459710971896" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7527362203764981" type="System">
+                    <param id="0" name="Variable">ach9</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7106908874710506" type="System">
+                    <param id="0" name="Variable">ach9</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8325348564085171">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1945153689816348" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4249103519128607" type="System">
+                    <param id="0" name="Variable">ach10</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3400993275202671" type="System">
+                    <param id="0" name="Variable">ach10</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8335254820957112">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4777703544873605" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">30</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9648301067946173" type="System">
+                    <param id="0" name="Variable">ach11</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5283583809062747" type="System">
+                    <param id="0" name="Variable">ach11</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3357200338785283">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7669226567488215" type="System">
+                    <param id="0" name="Variable">jokersKilled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">60</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1389486733236247" type="System">
+                    <param id="0" name="Variable">ach12</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6720290682196192" type="System">
+                    <param id="0" name="Variable">ach12</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2696680899772423">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3464951843941241" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5000</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8543556765842319" type="System">
+                    <param id="0" name="Variable">ach13</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7645574560505451" type="System">
+                    <param id="0" name="Variable">ach13</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="762532274575733">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9569860547788842" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10000</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7404691713098966" type="System">
+                    <param id="0" name="Variable">ach14</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5814854956144191" type="System">
+                    <param id="0" name="Variable">ach14</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5366025468656781">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9696793800488147" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">20000</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="643350011005072" type="System">
+                    <param id="0" name="Variable">ach15</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="513724166718659" type="System">
+                    <param id="0" name="Variable">ach15</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="8553158883699682">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2525420704811802" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Win</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="9123972024701216" type="Touch">
+                    <param id="0" name="Object">Win</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="8510638359355093" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com/baseball-for-clowns/&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="6825066554603012">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9369890298118996" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">FailHelp</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="4838543683572467" type="Touch">
+                    <param id="0" name="Object">FailHelp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="1980005790376262" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com/baseball-for-clowns/#down-scroll&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow5&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="5482463769347214">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4768266616527622" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">moregames2</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="8028529602002042" type="Touch">
+                    <param id="0" name="Object">moregames2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="2993187234407268" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow6&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="4549559719749908">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3871451412907433" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">KIZ10Logo</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="9725331291854085" type="Touch">
+                    <param id="0" name="Object">KIZ10Logo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="4536794279692233" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7057597574429404">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9757178853114585" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonHelp</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="8943429574975973" type="Touch">
+                    <param id="0" name="Object">ButtonHelp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="1564036694621678" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com/baseball-for-clowns/#down-scroll&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow5&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

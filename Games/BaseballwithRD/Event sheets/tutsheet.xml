@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>tutsheet</name>
+    <events>
+        <variable constant="0" name="tutclickable2" sid="3244780986163926" static="0" type="number">0</variable>
+        <event-block sid="7437983346391891">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8857340738190132" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2951772784275852" type="System">
+                    <param id="0" name="Variable">tutclickable2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="6008229615912912" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4295731484077873" type="System">
+                    <param id="0" name="Variable">tutclickable2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6705843437620466">
+            <conditions>
+                <condition id="1" name="On any click" sid="2206747986346985" type="Mouse" />
+                <condition id="-14" name="Compare variable" sid="4668155919513081" type="System">
+                    <param id="0" name="Variable">tutclickable2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1980940619217895" type="System">
+                    <param id="0" name="Layout">Stage1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7642912958172343">
+            <conditions>
+                <condition id="14" name="On tap" sid="5727973467529661" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="9681100276250876" type="System">
+                    <param id="0" name="Variable">tutclickable2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6330260653258512" type="System">
+                    <param id="0" name="Layout">Stage1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,2655 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>BaseballForClowns</name>
+    <description>Baseball for Clowns</description>
+    <version>1.0.0.0</version>
+    <author>AmitDhillon</author>
+    <author-email>amitdhillon9@gmail.com</author-email>
+    <author-website></author-website>
+    <app-id>com.rebellion.baseball</app-id>
+    <unique-id>1ulzu1593uhg8</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>450</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Loader</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Henk sprites">
+            <object-type name="Henk_Henk_RHand" sid="5790421482844106">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8153833298606943" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\R Hand.png">
+                            <collision-poly>
+                                <point x="0.0897436" y="0.0933333" />
+                                <point x="0.5" y="0.666667" />
+                                <point x="0.397436" y="0.626667" />
+                                <point x="0.24359" y="0.493333" />
+                                <point x="0.858974" y="0.853333" />
+                                <point x="0.5" y="0.92" />
+                                <point x="0.205128" y="0.786667" />
+                                <point x="0.0641026" y="0.493333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_ShootFX" sid="2921688082118781">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8070407288416103" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\Shoot FX.png">
+                            <collision-poly>
+                                <point x="0.160714" y="0.160714" />
+                                <point x="0.5" y="0.0714286" />
+                                <point x="0.776786" y="0.223214" />
+                                <point x="0.892857" y="0.5" />
+                                <point x="0.803571" y="0.803571" />
+                                <point x="0.5" y="0.160714" />
+                                <point x="0.6875" y="0.3125" />
+                                <point x="0.723214" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_Ball_000" sid="1066804896935002">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4216878504413221" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\Ball.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.142857" />
+                                <point x="0.485714" y="0" />
+                                <point x="0.857143" y="0.142857" />
+                                <point x="1" y="0.485714" />
+                                <point x="0.857143" y="0.857143" />
+                                <point x="0.485714" y="1" />
+                                <point x="0.142857" y="0.857143" />
+                                <point x="0" y="0.485714" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_Ball" sid="3732202189073952">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5564789987841494" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\Ball.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.142857" />
+                                <point x="0.485714" y="0" />
+                                <point x="0.857143" y="0.142857" />
+                                <point x="1" y="0.485714" />
+                                <point x="0.857143" y="0.857143" />
+                                <point x="0.485714" y="1" />
+                                <point x="0.142857" y="0.857143" />
+                                <point x="0" y="0.485714" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_LLeg" sid="3452477902277316">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4811289681859439" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\L Leg.png">
+                            <collision-poly>
+                                <point x="0.354839" y="0.229167" />
+                                <point x="0.5" y="0.0625" />
+                                <point x="0.854839" y="0.09375" />
+                                <point x="0.612903" y="0.5" />
+                                <point x="0.822581" y="0.885417" />
+                                <point x="0.5" y="0.895833" />
+                                <point x="0.177419" y="0.885417" />
+                                <point x="0.306452" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_RLeg" sid="5695277757008827">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8770585340677344" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\R Leg.png">
+                            <collision-poly>
+                                <point x="0.136364" y="0.102273" />
+                                <point x="0.5" y="0.0909091" />
+                                <point x="0.606061" y="0.295455" />
+                                <point x="0.5" y="0.5" />
+                                <point x="0.484848" y="0.613636" />
+                                <point x="0.5" y="0.931818" />
+                                <point x="0.121212" y="0.909091" />
+                                <point x="0.212121" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_RThigh" sid="2899138074455021">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6999796371771531" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\R Thigh.png">
+                            <collision-poly>
+                                <point x="0.209302" y="0.157895" />
+                                <point x="0.488372" y="0.157895" />
+                                <point x="0.651163" y="0.263158" />
+                                <point x="0.767442" y="0.491228" />
+                                <point x="0.813953" y="0.859649" />
+                                <point x="0.488372" y="0.982456" />
+                                <point x="0.186047" y="0.859649" />
+                                <point x="0.0465116" y="0.491228" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_LThigh" sid="1424864681724447">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7805944051793216" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\L Thigh.png">
+                            <collision-poly>
+                                <point x="0.160714" y="0.183673" />
+                                <point x="0.5" y="0.0612245" />
+                                <point x="0.910714" y="0.102041" />
+                                <point x="0.678571" y="0.489796" />
+                                <point x="0.678571" y="0.632653" />
+                                <point x="0.5" y="0.979592" />
+                                <point x="0.107143" y="0.877551" />
+                                <point x="0.0714286" y="0.489796" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_Torso" sid="2155497758283164">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8785394432527829" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\Torso.png">
+                            <collision-poly>
+                                <point x="0.272727" y="0.206897" />
+                                <point x="0.5" y="0" />
+                                <point x="0.787879" y="0.16092" />
+                                <point x="0.833333" y="0.494253" />
+                                <point x="0.984848" y="0.988506" />
+                                <point x="0.5" y="0.965517" />
+                                <point x="0.030303" y="0.977012" />
+                                <point x="0.0454545" y="0.494253" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_Head" sid="6985315189941425">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2192100275441121" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\Head.png">
+                            <collision-poly>
+                                <point x="0.141026" y="0.127907" />
+                                <point x="0.5" y="0.0116279" />
+                                <point x="0.820513" y="0.162791" />
+                                <point x="0.948718" y="0.5" />
+                                <point x="0.807692" y="0.825581" />
+                                <point x="0.5" y="0.976744" />
+                                <point x="0.166667" y="0.848837" />
+                                <point x="0.0128205" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Henk_Henk_LHand" sid="4755377187404757">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Henk</type>
+                    <type>Henk_Henk_RHand</type>
+                    <type>Henk_Henk_ShootFX</type>
+                    <type>Henk_Henk_Ball_000</type>
+                    <type>Henk_Henk_Ball</type>
+                    <type>Henk_Henk_LLeg</type>
+                    <type>Henk_Henk_RLeg</type>
+                    <type>Henk_Henk_RThigh</type>
+                    <type>Henk_Henk_LThigh</type>
+                    <type>Henk_Henk_Torso</type>
+                    <type>Henk_Henk_Head</type>
+                    <type>Henk_Henk_LHand</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1934257674872707" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Henk\L Hand.png">
+                            <collision-poly>
+                                <point x="0.224638" y="0.340659" />
+                                <point x="0.5" y="0.67033" />
+                                <point x="0.586957" y="0.626374" />
+                                <point x="0.992754" y="0.494505" />
+                                <point x="0.811594" y="0.714286" />
+                                <point x="0.5" y="0.769231" />
+                                <point x="0.23913" y="0.637363" />
+                                <point x="0.210145" y="0.494505" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="MenuHenk sprites">
+            <object-type name="MenuHenk_Henk_HandR" sid="8935017583007172">
+                <plugin id="Sprite" />
+                <container>
+                    <type>MenuHenk</type>
+                    <type>MenuHenk_Henk_HandR</type>
+                    <type>MenuHenk_Henk_Pant</type>
+                    <type>MenuHenk_Henk_Torso</type>
+                    <type>MenuHenk_Henk_Head</type>
+                    <type>MenuHenk_Henk_HandL</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9091696831667958" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Menu Henk\Hand R.png">
+                            <collision-poly>
+                                <point x="0.0613497" y="0.0591716" />
+                                <point x="0.5" y="0.62426" />
+                                <point x="0.352761" y="0.62426" />
+                                <point x="0.205521" y="0.5" />
+                                <point x="0.837423" y="0.843195" />
+                                <point x="0.5" y="0.911243" />
+                                <point x="0.233129" y="0.775148" />
+                                <point x="0.0276074" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MenuHenk_Henk_Pant" sid="2363049444764067">
+                <plugin id="Sprite" />
+                <container>
+                    <type>MenuHenk</type>
+                    <type>MenuHenk_Henk_HandR</type>
+                    <type>MenuHenk_Henk_Pant</type>
+                    <type>MenuHenk_Henk_Torso</type>
+                    <type>MenuHenk_Henk_Head</type>
+                    <type>MenuHenk_Henk_HandL</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2572971045362002" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Menu Henk\Pant.png">
+                            <collision-poly>
+                                <point x="0.124324" y="0.234694" />
+                                <point x="0.5" y="0.00510204" />
+                                <point x="0.859459" y="0.265306" />
+                                <point x="0.994595" y="0.989796" />
+                                <point x="0.5" y="0.367347" />
+                                <point x="0.0459459" y="0.913265" />
+                                <point x="0.0783784" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MenuHenk_Henk_Torso" sid="2169674633351117">
+                <plugin id="Sprite" />
+                <container>
+                    <type>MenuHenk</type>
+                    <type>MenuHenk_Henk_HandR</type>
+                    <type>MenuHenk_Henk_Pant</type>
+                    <type>MenuHenk_Henk_Torso</type>
+                    <type>MenuHenk_Henk_Head</type>
+                    <type>MenuHenk_Henk_HandL</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9790807200289746" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Menu Henk\Torso.png">
+                            <collision-poly>
+                                <point x="0.177049" y="0.138462" />
+                                <point x="0.498361" y="0.00512821" />
+                                <point x="0.770492" y="0.179487" />
+                                <point x="0.796721" y="0.5" />
+                                <point x="0.937705" y="0.951282" />
+                                <point x="0.0393443" y="0.969231" />
+                                <point x="0.0557377" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MenuHenk_Henk_Head" sid="2224769128227602">
+                <plugin id="Sprite" />
+                <container>
+                    <type>MenuHenk</type>
+                    <type>MenuHenk_Henk_HandR</type>
+                    <type>MenuHenk_Henk_Pant</type>
+                    <type>MenuHenk_Henk_Torso</type>
+                    <type>MenuHenk_Henk_Head</type>
+                    <type>MenuHenk_Henk_HandL</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2524295792181934" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Menu Henk\Head.png">
+                            <collision-poly>
+                                <point x="0.147826" y="0.133159" />
+                                <point x="0.498551" y="0.0078329" />
+                                <point x="0.828986" y="0.154047" />
+                                <point x="0.950725" y="0.498695" />
+                                <point x="0.814493" y="0.832898" />
+                                <point x="0.498551" y="0.960836" />
+                                <point x="0.153623" y="0.861619" />
+                                <point x="0.0289855" y="0.498695" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Menu Henk\Head 2.png">
+                            <collision-poly>
+                                <point x="0.147826" y="0.133159" />
+                                <point x="0.498551" y="0.0078329" />
+                                <point x="0.828986" y="0.154047" />
+                                <point x="0.950725" y="0.498695" />
+                                <point x="0.814493" y="0.832898" />
+                                <point x="0.498551" y="0.960836" />
+                                <point x="0.153623" y="0.861619" />
+                                <point x="0.0289855" y="0.498695" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Menu Henk\Head 3.png">
+                            <collision-poly>
+                                <point x="0.147826" y="0.133159" />
+                                <point x="0.498551" y="0.0078329" />
+                                <point x="0.828986" y="0.154047" />
+                                <point x="0.950725" y="0.498695" />
+                                <point x="0.814493" y="0.832898" />
+                                <point x="0.498551" y="0.960836" />
+                                <point x="0.153623" y="0.861619" />
+                                <point x="0.0289855" y="0.498695" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MenuHenk_Henk_HandL" sid="2549204416842548">
+                <plugin id="Sprite" />
+                <container>
+                    <type>MenuHenk</type>
+                    <type>MenuHenk_Henk_HandR</type>
+                    <type>MenuHenk_Henk_Pant</type>
+                    <type>MenuHenk_Henk_Torso</type>
+                    <type>MenuHenk_Henk_Head</type>
+                    <type>MenuHenk_Henk_HandL</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5619176550504207" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Menu Henk\Hand L.png">
+                            <collision-poly>
+                                <point x="0.193727" y="0.258621" />
+                                <point x="0.5" y="0.657635" />
+                                <point x="0.51107" y="0.652709" />
+                                <point x="0.98524" y="0.5" />
+                                <point x="0.785978" y="0.714286" />
+                                <point x="0.5" y="0.76601" />
+                                <point x="0.0461255" y="0.938424" />
+                                <point x="0.114391" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="BG1" sid="8642508240175542">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8762387952603408" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Backgrounds\BG1.png">
+                        <collision-poly>
+                            <point x="0.0025" y="0.00444444" />
+                            <point x="0.9975" y="0.00444444" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Henk" sid="9348586810611736">
+            <plugin id="Spriter" />
+            <container>
+                <type>Henk</type>
+                <type>Henk_Henk_RHand</type>
+                <type>Henk_Henk_ShootFX</type>
+                <type>Henk_Henk_Ball_000</type>
+                <type>Henk_Henk_Ball</type>
+                <type>Henk_Henk_LLeg</type>
+                <type>Henk_Henk_RLeg</type>
+                <type>Henk_Henk_RThigh</type>
+                <type>Henk_Henk_LThigh</type>
+                <type>Henk_Henk_Torso</type>
+                <type>Henk_Henk_Head</type>
+                <type>Henk_Henk_LHand</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4973727809338564" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Aim" sid="3377701683042583">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290805843225693" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.533333" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\aim white.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="439114821059014">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Mouse" sid="9525933558970046">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="ball" sid="9238332432110539">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BCollision" sid="8984506178957755" type="number" />
+                <instance-variable name="Icollision" sid="9283732963236132" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics" sid="2273732815900444">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>Trail</type>
+                <type>ball</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5904856245090952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Baseball.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Boundary" sid="3548595763390034">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="2977601035226506">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9723257654994148" speed="5">
+                    <frame duration="1" hotspotX="0.714286" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Trail" sid="1144196227265982">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="9899858827517577">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>Trail</type>
+                <type>ball</type>
+            </container>
+            <texture />
+        </object-type>
+        <object-type name="ScoreBg" sid="6666126577241626">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4012604917527929" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\score BG.png">
+                        <collision-poly>
+                            <point x="0.0106007" y="0.0535714" />
+                            <point x="0.498233" y="0" />
+                            <point x="0.989399" y="0.0535714" />
+                            <point x="0.989399" y="0.946429" />
+                            <point x="0.498233" y="1" />
+                            <point x="0.0106007" y="0.946429" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BallHUD" sid="19773158511875">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9537702221121258" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Baseball.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Joker" sid="1282212452997457">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="7660000740961536">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="24" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3573075829421914" speed="15">
+                    <frame duration="1" hotspotX="0.490385" hotspotY="0.48538" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_000.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.482353" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_001.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.519608" hotspotY="0.47619" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_002.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.534653" hotspotY="0.473054" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_003.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.466667" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_004.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.575758" hotspotY="0.463415" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_005.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.585859" hotspotY="0.460123" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_006.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.453416" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_007.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.606061" hotspotY="0.45" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_008.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.616162" hotspotY="0.443038" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_009.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.632653" hotspotY="0.43949" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_010.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.636364" hotspotY="0.432258" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_011.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.636364" hotspotY="0.435897" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_012.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.636364" hotspotY="0.432258" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_013.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.632653" hotspotY="0.435897" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_014.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.616162" hotspotY="0.443038" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_015.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.61" hotspotY="0.446541" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_016.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.453416" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_017.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.59" hotspotY="0.45679" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_018.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.585859" hotspotY="0.463415" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_019.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.466667" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_020.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.544554" hotspotY="0.473054" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_021.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.519608" hotspotY="0.47619" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_022.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.47929" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\idle\1_023.png">
+                        <collision-poly>
+                            <point x="0.163462" y="0.181287" />
+                            <point x="0.769231" y="0.175439" />
+                            <point x="0.778847" y="0.959064" />
+                            <point x="0.211539" y="0.959064" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Baloon" sid="2590636854765877">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="9750985052040114">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7666772938612108" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\Balloon.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.75" y="0.697368" />
+                            <point x="0.444445" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Head" sid="4423893709889261">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="9652652745608514">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7076665527791297" speed="5">
+                    <frame duration="1" hotspotX="0.403846" hotspotY="1.12069" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\Head.png">
+                        <collision-poly>
+                            <point x="0.0769231" y="0" />
+                            <point x="0.865385" y="0" />
+                            <point x="0.942308" y="0.913793" />
+                            <point x="0" y="0.948276" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Torso" sid="3250403809097056">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="8694339368365859">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1568740228005893" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.509091" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\Torso.png">
+                        <image-point name="Imagepoint 1" x="0.216216" y="0.381818" />
+                        <image-point name="Imagepoint 2" x="0.783784" y="0.381818" />
+                        <image-point name="Imagepoint 3" x="0.351351" y="0.909091" />
+                        <image-point name="Imagepoint 4" x="0.72973" y="0.890909" />
+                        <image-point name="Imagepoint 5" x="0.432432" y="0" />
+                        <collision-poly>
+                            <point x="0.162162" y="0.109091" />
+                            <point x="0.486486" y="0" />
+                            <point x="0.810811" y="0.127273" />
+                            <point x="0.945946" y="0.490909" />
+                            <point x="0.918919" y="0.845455" />
+                            <point x="0.5" y="0.881818" />
+                            <point x="0.108108" y="0.9" />
+                            <point x="0.108108" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Legs" sid="8537350005937996">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="313084794217138">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9035790676995943" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\Legs.png">
+                        <collision-poly>
+                            <point x="0.48" y="0.436364" />
+                            <point x="0.5" y="0.0363636" />
+                            <point x="0.92" y="0.0727273" />
+                            <point x="0.96" y="0.490909" />
+                            <point x="0.98" y="0.981818" />
+                            <point x="0.02" y="0.981818" />
+                            <point x="0.5" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LHand" sid="4069460056798149">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="325963203726821">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7265135822303907" speed="5">
+                    <frame duration="1" hotspotX="0.478261" hotspotY="-0.0204082" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\Hand L.png">
+                        <image-point name="Imagepoint 1" x="0.73913" y="0.918367" />
+                        <collision-poly>
+                            <point x="0.652174" y="0" />
+                            <point x="0.641304" y="0.994898" />
+                            <point x="0.271739" y="1" />
+                            <point x="0.260869" y="0.00510204" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RHand" sid="8800579688997042">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1074601848146749">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2470741881656941" speed="5">
+                    <frame duration="1" hotspotX="0.24" hotspotY="0.533333" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\New Joker\Hand R.png">
+                        <collision-poly>
+                            <point x="0.995" y="0.341667" />
+                            <point x="0.995" y="0.658333" />
+                            <point x="0.01" y="0.675" />
+                            <point x="0.00999998" y="0.341666" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseBtn" sid="5920541173197605">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9218683648586514" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\btn_Pause0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\btn_Pause0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseBG" sid="2037877287007339">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="6989103242390775">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1703976912689493" speed="5">
+                    <frame duration="1" hotspotX="0.501529" hotspotY="0.501139" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PRestart" sid="6735478891765377">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="6146544366769499">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="1281840778998439">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2922393144977127" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\btn_Restart.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PResume" sid="5805922654003921">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="5762558235078667">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="9634762991088718">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8126530980026658" speed="5">
+                    <frame duration="1" hotspotX="0.503759" hotspotY="0.507937" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\btn_Resume.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PMenu" sid="3727824289157863">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="5849546883432285">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="9397419305246081">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1510327716082384" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\in game GUI\btn_Menu.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ImageHenk" sid="999123719028547">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="4866165502291664">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4172235460404618" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\character paint.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuBg" sid="4518623120552881">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9858574155237079" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Backgrounds\BG1.png">
+                        <collision-poly>
+                            <point x="0.0025" y="0.00444444" />
+                            <point x="0.9975" y="0.00444444" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuHenk" sid="1523495240996539">
+            <plugin id="Spriter" />
+            <container>
+                <type>MenuHenk</type>
+                <type>MenuHenk_Henk_HandR</type>
+                <type>MenuHenk_Henk_Pant</type>
+                <type>MenuHenk_Henk_Torso</type>
+                <type>MenuHenk_Henk_Head</type>
+                <type>MenuHenk_Henk_HandL</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9156142620668552" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Logo" sid="1480973592778602">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="3074220753301418">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="6842310427847617">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6462118994340739" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Title.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayBtn" sid="4773790878165408">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="3629803740853821">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="9957057697475112">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3992276014385448" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Play.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnBG" sid="3373351892420828">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="2917984130935193">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4336242653196635" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Achievements" sid="2268801426941531">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="5533807318599898">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8163033487350971" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Achievement0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Achievement0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HighScores" sid="6206959276999205">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="8179213720589547">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3626731007479542" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Highscores0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Highscores0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Help" sid="1494580425652656">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="3052694291049541">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5178819099950143" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Help0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Help0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sound" sid="4972026722511647">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="2123787984836325">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9275927510122182" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Sound0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Sound0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Sound0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\btn_Sound0004.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LevelBG" sid="7726637824452836">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7935420857481143" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Backgrounds\BG1.png">
+                        <collision-poly>
+                            <point x="0.0025" y="0.00444444" />
+                            <point x="0.9975" y="0.00444444" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Backgrounds\BG2.png">
+                        <collision-poly>
+                            <point x="0.00125" y="0.00222222" />
+                            <point x="0.99875" y="0.00222222" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Backgrounds\BG3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LevelMenuBG" sid="9776867469860759">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5556345766763484" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501119" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L1" sid="7495874373646084">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="4795709503699328">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9119388889376277" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00022.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L2" sid="7959214771232832">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="2709319728063987">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2452694292259414" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00023.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L3" sid="8770949734559647">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="1603784963956629">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5873623021443703" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00024.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L4" sid="8945313665762113">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="1605421321189013">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9315219851025138" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00025.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L5" sid="7030964348948151">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="3663239945310971">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5240220103089103" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00026.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L6" sid="942651900142558">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="5681812100032344">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8397947196587788" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00027.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L7" sid="1228363244204661">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="6044997117267659">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1792319071024513" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00028.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L8" sid="9041011061163532">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="8358543563824849">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7740195502688215" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00029.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L9" sid="3173546525183381">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="7334716000034345">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9377181857336827" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00030.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L10" sid="3075381354670757">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="7061083625933864">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1663642947896527" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\00031.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CloseBtn" sid="6368635860561759">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="3937590968110698">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="3437586284168045">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767520870119229" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.513514" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\btn_Close.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="h1" sid="2447947610314824">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="2352678922328448">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3971050307400617" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\Current scene dot0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\Current scene dot0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="h2" sid="4523615820984756">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="1181259719955751">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2849438757961866" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\Current scene dot0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\Current scene dot0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="h3" sid="7631881554355099">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="6505832112942619">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4886834621546028" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\Current scene dot0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\Current scene dot0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RBtn" sid="1250250457667764">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="9066015652228423">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="37991724034353" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\btn_Right.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LBtn" sid="1826847960377019">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="1921141141745659">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919911068426714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\btn_Left.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StarIcon" sid="8755192100226701">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="i" sid="3775105760222334" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LiteTween" sid="518938708531622">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5089313705409397" speed="0">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\stars0001.png" />
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\stars0002.png" />
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Level Select\stars0003.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LevelComplete" sid="7474161736116405">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="2444386355414809">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4915604658265978" speed="5">
+                    <frame duration="1" hotspotX="0.501529" hotspotY="0.501139" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Next" sid="307454236957668">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="3339935869440924">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="2162068120434028">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5197950813868334" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\btn_Next.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menu" sid="7539475022913556">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="132796076358445">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="2593144744306848">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1860290769037237" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.508475" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\btn_Menu.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Restart" sid="7787061217776462">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="5488765752794929">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="1419075183134557">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9869733400833718" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.508475" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\btn_Restart.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Stars" sid="4517427897522684">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="OverlayBall" sid="2413670001195136">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="7718641302969103">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1192287950660196" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500626" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\Menu\Ball.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OverlayBG" sid="7216729876676345">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="9408572391758756">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1306641931539909" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LevelStars" sid="9486599691633373">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="175029785415281">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5479916879622125" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\Stars0003.png">
+                        <collision-poly>
+                            <point x="0.0766423" y="0.194444" />
+                            <point x="0.5" y="0.00925926" />
+                            <point x="0.923358" y="0.194444" />
+                            <point x="0.99635" y="0.5" />
+                            <point x="0.923358" y="0.805556" />
+                            <point x="0.0766423" y="0.805556" />
+                            <point x="0.00364964" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\Stars0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\New folder\Baseball For Clowns\new Level Complete\Stars0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Unlocked" sid="3025838143815224">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Function" sid="1548434180156406">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="IronP" sid="9092511860022749">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="5150750861125438">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5472694564804968" speed="5">
+                    <frame duration="1" hotspotX="0.51773" hotspotY="0.56" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\iron bar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tire" sid="1296756374731491">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="7870180207171805">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5450997930756806" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Tire.png">
+                        <collision-poly>
+                            <point x="0.163934" y="0.163934" />
+                            <point x="0.491803" y="0.0163934" />
+                            <point x="0.852459" y="0.147541" />
+                            <point x="1" y="0.491803" />
+                            <point x="0.852459" y="0.852459" />
+                            <point x="0.491803" y="1" />
+                            <point x="0.147541" y="0.852459" />
+                            <point x="0.0163934" y="0.491803" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="KillerBlock" sid="7797050584036942">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1122949018588247">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6321132903130182" speed="5">
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.545455" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Spike cube.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Domino" sid="6257074060227467">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1067619232934263">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2475996660721291" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505618" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Glass Bar.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.101124" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.269663" />
+                        <image-point name="Imagepoint 3" x="0.4375" y="0.696629" />
+                        <image-point name="Imagepoint 4" x="0.5" y="0.921348" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P1" sid="5324014868632259">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="3040030007962264">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="7326621629993646">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8803296763929527" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.529412" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Piece 1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P2" sid="3595438337174099">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="8595214819845398">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="4421961641505327">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3599962470805352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512821" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Piece 2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P3" sid="3576911755714963">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="3479158078451103">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="3266945835709304">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6479107119720405" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Piece 3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P4" sid="7122965588355292">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="7675431939453107">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="8580518992863139">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5760721899352863" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Piece 4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P5" sid="8215674734035538">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="5988709759892265">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="7880104928417164">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2230674142293086" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Piece 5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Concrete" sid="9344456923285595">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1875456125647008">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7662943143734353" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\concrete bar.png">
+                        <collision-poly>
+                            <point x="0.0140845" y="0.0769231" />
+                            <point x="0.514085" y="0.0384615" />
+                            <point x="0.992958" y="0.192308" />
+                            <point x="0.985915" y="0.923077" />
+                            <point x="0.514085" y="0.961538" />
+                            <point x="0.0352113" y="0.961538" />
+                            <point x="0.00704225" y="0.576923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG2" sid="5218704395393221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3630656821773976" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SIDDICTION\Desktop\Baseball_Clowns\Baseball For Clowns\Backgrounds\BG2.png">
+                        <collision-poly>
+                            <point x="0.00125" y="0.00222222" />
+                            <point x="0.99875" y="0.00222222" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PEnter" sid="9017857690763724">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="1579192767761834">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7010445659861245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\in game GUI\portal enter.png">
+                        <collision-poly>
+                            <point x="0.198113" y="0.194444" />
+                            <point x="0.783019" y="0.231481" />
+                            <point x="0.745283" y="0.768518" />
+                            <point x="0.245283" y="0.740741" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PExit" sid="3246899554773977">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="3274262552888605">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732559686789937" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\in game GUI\portal exit.png">
+                        <collision-poly>
+                            <point x="0.216981" y="0.212963" />
+                            <point x="0.518868" y="0.111111" />
+                            <point x="0.773585" y="0.268519" />
+                            <point x="0.896226" y="0.518519" />
+                            <point x="0.745283" y="0.740741" />
+                            <point x="0.518868" y="0.824074" />
+                            <point x="0.245283" y="0.796296" />
+                            <point x="0.113208" y="0.518519" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG3" sid="2716120404009968">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7837122745891961" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Backgrounds\BG3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ElecBase" sid="213407436237975">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6023571472719755" speed="5">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.529412" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity ends.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ElecLong" sid="6804336597928405">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5574931694449025" speed="8">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity full0001.png">
+                        <collision-poly>
+                            <point x="0.450704" y="0.0744186" />
+                            <point x="0.492958" y="0.0418605" />
+                            <point x="0.605634" y="0.0651163" />
+                            <point x="0.633803" y="0.5" />
+                            <point x="0.450704" y="0.909302" />
+                            <point x="0.492958" y="0.939535" />
+                            <point x="0.394366" y="0.934884" />
+                            <point x="0.323944" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity full0002.png">
+                        <collision-poly>
+                            <point x="0.450704" y="0.0744186" />
+                            <point x="0.492958" y="0.0418605" />
+                            <point x="0.605634" y="0.0651163" />
+                            <point x="0.633803" y="0.5" />
+                            <point x="0.450704" y="0.909302" />
+                            <point x="0.492958" y="0.939535" />
+                            <point x="0.394366" y="0.934884" />
+                            <point x="0.323944" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity full0003.png">
+                        <collision-poly>
+                            <point x="0.450704" y="0.0744186" />
+                            <point x="0.492958" y="0.0418605" />
+                            <point x="0.605634" y="0.0651163" />
+                            <point x="0.633803" y="0.5" />
+                            <point x="0.450704" y="0.909302" />
+                            <point x="0.492958" y="0.939535" />
+                            <point x="0.394366" y="0.934884" />
+                            <point x="0.323944" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity full0004.png">
+                        <collision-poly>
+                            <point x="0.450704" y="0.0744186" />
+                            <point x="0.492958" y="0.0418605" />
+                            <point x="0.605634" y="0.0651163" />
+                            <point x="0.633803" y="0.5" />
+                            <point x="0.450704" y="0.909302" />
+                            <point x="0.492958" y="0.939535" />
+                            <point x="0.394366" y="0.934884" />
+                            <point x="0.323944" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ElecShort" sid="3332802977496824">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="553551373764261" speed="8">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity short0001.png">
+                        <collision-poly>
+                            <point x="0.323944" y="0.509934" />
+                            <point x="0.492958" y="0.0596026" />
+                            <point x="0.591549" y="0.0960265" />
+                            <point x="0.577465" y="0.5" />
+                            <point x="0.450704" y="0.870861" />
+                            <point x="0.492958" y="0.917219" />
+                            <point x="0.394366" y="0.907285" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity short0002.png">
+                        <collision-poly>
+                            <point x="0.323944" y="0.509934" />
+                            <point x="0.492958" y="0.0596026" />
+                            <point x="0.591549" y="0.0960265" />
+                            <point x="0.577465" y="0.5" />
+                            <point x="0.450704" y="0.870861" />
+                            <point x="0.492958" y="0.917219" />
+                            <point x="0.394366" y="0.907285" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity short0003.png">
+                        <collision-poly>
+                            <point x="0.323944" y="0.509934" />
+                            <point x="0.492958" y="0.0596026" />
+                            <point x="0.591549" y="0.0960265" />
+                            <point x="0.577465" y="0.5" />
+                            <point x="0.450704" y="0.870861" />
+                            <point x="0.492958" y="0.917219" />
+                            <point x="0.394366" y="0.907285" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\electricity short0004.png">
+                        <collision-poly>
+                            <point x="0.323944" y="0.509934" />
+                            <point x="0.492958" y="0.0596026" />
+                            <point x="0.591549" y="0.0960265" />
+                            <point x="0.577465" y="0.5" />
+                            <point x="0.450704" y="0.870861" />
+                            <point x="0.492958" y="0.917219" />
+                            <point x="0.394366" y="0.907285" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Switch" sid="2670751387862918">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440948571223784" speed="0">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Gravity Switch0002.png" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Gravity Switch0001.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Box" sid="3094838663610086">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="9711957689584555">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8223442319247342" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.514286" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Cargoard Box.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fan" sid="9949145698889064">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5438535457962785" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Fan0002.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Fan0003.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cloud" sid="8970661331027343">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Cloud FX.png" />
+        </object-type>
+        <object-type name="VMachine" sid="7593325255319598">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="6642565056256252">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="8369456823605743">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8568852120029149" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\Vending Machine.png">
+                        <image-point name="Imagepoint 1" x="0.489796" y="-0.0138889" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wood" sid="517300210450945">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="8900750364591577">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430455814152773" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.524752" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Level Props\wood small.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HHead" sid="8923569505465006">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="5448567579957955">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9193406020632621" speed="5">
+                    <frame duration="1" hotspotX="0.501449" hotspotY="0.501305" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\Henk Head.png">
+                        <image-point name="Imagepoint 1" x="0.805797" y="0.822454" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JHead" sid="8891081130988007">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="68601269257322">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4585543577992085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504348" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\Joker head.png">
+                        <image-point name="Imagepoint 1" x="0.163462" y="0.808696" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HDialogue" sid="9820817186547777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="349758768608521" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\henk dialog0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\henk dialog0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\henk dialog0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\henk dialog0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\henk dialog0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\henk dialog0006.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JDialogue" sid="3459556574409223">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="480009050099802" speed="0">
+                    <frame duration="1" hotspotX="0.501502" hotspotY="0.502825" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\joker dialog0001.png" />
+                    <frame duration="1" hotspotX="0.501502" hotspotY="0.502825" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\joker dialog0002.png" />
+                    <frame duration="1" hotspotX="0.501502" hotspotY="0.502825" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\joker dialog0003.png" />
+                    <frame duration="1" hotspotX="0.501502" hotspotY="0.502825" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\joker dialog0004.png" />
+                    <frame duration="1" hotspotX="0.501502" hotspotY="0.502825" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\joker dialog0005.png" />
+                    <frame duration="1" hotspotX="0.501502" hotspotY="0.502825" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\joker dialog0006.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Skip" sid="9998037839271952">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2567438519921207" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.516129" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\skip.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Click_Tap" sid="4956091519740025">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4657403406406714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Cutscene 1\click to continue.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AimPT" sid="2383830695129242">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1797107406357382" speed="5">
+                    <frame duration="1" hotspotX="0.727273" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="1.68182" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="1835863606201471">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Dot.png" />
+        </object-type>
+        <object-type name="LocalStorage1" sid="3907264302231799">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Audio" sid="5378687642802378">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="SpriteFont" sid="9558777208498491">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\in game GUI\fix.png" />
+        </object-type>
+        <object-type name="SpriteFont2" sid="5024362264713781">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\in game GUI\score font.png" />
+        </object-type>
+        <object-type name="Lleg" sid="1801155247406849">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="6881754576191479">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2821323789422311" speed="5">
+                    <frame duration="1" hotspotX="0.777778" hotspotY="0.490909" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\in game GUI\seperate leg.png">
+                        <collision-poly>
+                            <point x="0.534723" y="0" />
+                            <point x="0.930556" y="0" />
+                            <point x="0.916667" y="0.881818" />
+                            <point x="0.732639" y="0.972727" />
+                            <point x="0.534722" y="0.881818" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Rleg" sid="5487200222184986">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="2718087769214962">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3393592529111795" speed="5">
+                    <frame duration="1" hotspotX="0.861111" hotspotY="0.490909" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\in game GUI\seperate leg.png">
+                        <collision-poly>
+                            <point x="0.541667" y="0.00454545" />
+                            <point x="0.916667" y="0.00454545" />
+                            <point x="0.930556" y="0.877273" />
+                            <point x="0.736111" y="0.986364" />
+                            <point x="0.541667" y="0.872727" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Points" sid="3547988738865164">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="6619907624669837">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="970757226882629">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8979984674848505" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\score.png">
+                        <collision-poly>
+                            <point x="0.0722892" y="0.0967742" />
+                            <point x="0.493976" y="0.0645161" />
+                            <point x="0.891566" y="0.145161" />
+                            <point x="1" y="0.5" />
+                            <point x="0.915663" y="0.887097" />
+                            <point x="0.493976" y="0.83871" />
+                            <point x="0.0722892" y="0.903226" />
+                            <point x="0.0361446" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="3009129948215249">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="9538290110255125">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6586007603204458" speed="5">
+                    <frame duration="1" hotspotX="0.501333" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\BaseballwithRD\Bottom.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="9689358673259887">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="6155856322790659">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3061370795347061" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\BaseballwithRD\Instructions.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="2361442331435623">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="2959347344078163">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9452103672124946" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502203" original-source="C:\Users\Ranjan Mishra\Desktop\BaseballwithRD\Ins Left.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="8869640148837815">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="5369431282006085">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6642595576346655" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502183" original-source="C:\Users\Ranjan Mishra\Desktop\BaseballwithRD\Ins Right.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LoaderBG" sid="4208638282030957">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7694891972568847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Loader\BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="4230900901118503">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5100591472228797" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Loader\Loading1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Loader\Loadig2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Loader\Loading3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CreditsBtn" sid="9447825108913844">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="8996820813597608">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9984670041057866" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Credits\Credits.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CreditsPanel" sid="9814533618027169">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="135823952595499">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5447899905279527" speed="5">
+                    <frame duration="1" hotspotX="0.501529" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Credits\Panel.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CreditsClose" sid="8820680738325945">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="9382307033639705">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5586200285766297" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.513514" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Credits\Close.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="7243105135453543">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="KIZ10Logo" sid="4510799709888734">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="9472906322653737">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8770659386092929" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Sponsor Branding\Logo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="moregames" sid="9042982165279314">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="7283615907563479">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6223005726818102" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Sponsor Branding\More Games.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="addtosite" sid="6455748753237399">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="5155150818890287">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1757645461362772" speed="5">
+                    <frame duration="1" hotspotX="0.502793" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Sponsor Branding\Add to Your Site.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Win" sid="2794044473127878">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="7804382596868019">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3234622894530692" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\new\Win Prizes.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FailHelp" sid="9759610073415202">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="2790966540935618">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9650580116647845" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Sponsor Branding\Walkthrough button game over.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="moregames2" sid="2110101384350548">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="719958033349381">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9488088854595312" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\new\More Games.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonHelp" sid="9662624663543808">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5254200225709732" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ranjan Mishra\Desktop\Baseball_Clowns\Baseball For Clowns\Sponsor Branding\Btn_Help.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="HenkFamily" plugin-id="Sprite" sid="1166666450414312">
+            <members>
+                <member>Henk_Henk_Ball</member>
+                <member>Henk_Henk_Ball_000</member>
+                <member>Henk_Henk_Head</member>
+                <member>Henk_Henk_LHand</member>
+                <member>Henk_Henk_LLeg</member>
+                <member>Henk_Henk_LThigh</member>
+                <member>Henk_Henk_RHand</member>
+                <member>Henk_Henk_RLeg</member>
+                <member>Henk_Henk_RThigh</member>
+                <member>Henk_Henk_ShootFX</member>
+                <member>Henk_Henk_Torso</member>
+            </members>
+        </family>
+        <family name="MenuHenkFamily" plugin-id="Sprite" sid="549585267216031">
+            <members>
+                <member>MenuHenk_Henk_HandL</member>
+                <member>MenuHenk_Henk_HandR</member>
+                <member>MenuHenk_Henk_Head</member>
+                <member>MenuHenk_Henk_Pant</member>
+                <member>MenuHenk_Henk_Torso</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Loader.xml</layout>
+        <layout>Layout 1.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>LevelSelect.xml</layout>
+        <layout>CutScene.xml</layout>
+        <layout>tutorial.xml</layout>
+        <layout>Stage1.xml</layout>
+        <layout>Stage2.xml</layout>
+        <layout>Stage3.xml</layout>
+        <layout>Stage4.xml</layout>
+        <layout>Stage5.xml</layout>
+        <layout>Stage6.xml</layout>
+        <layout>Stage7.xml</layout>
+        <layout>Stage8.xml</layout>
+        <layout>Stage9.xml</layout>
+        <layout>Stage10.xml</layout>
+        <layout>Stage11.xml</layout>
+        <layout>Stage12.xml</layout>
+        <layout>Stage13.xml</layout>
+        <layout>Stage14.xml</layout>
+        <layout>Stage15.xml</layout>
+        <layout>Stage16.xml</layout>
+        <layout>Stage17.xml</layout>
+        <layout>Stage18.xml</layout>
+        <layout>Stage19.xml</layout>
+        <layout>Stage20.xml</layout>
+        <layout>Stage21.xml</layout>
+        <layout>Stage22.xml</layout>
+        <layout>Stage23.xml</layout>
+        <layout>Stage24.xml</layout>
+        <layout>Stage25.xml</layout>
+        <layout>Stage26.xml</layout>
+        <layout>Stage27.xml</layout>
+        <layout>Stage28.xml</layout>
+        <layout>Stage29.xml</layout>
+        <layout>Stage30.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>MainSheet.xml</event-sheet>
+        <event-sheet>Henk.xml</event-sheet>
+        <event-sheet>MenuSheet.xml</event-sheet>
+        <event-sheet>LevelSelectSheet.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 5.xml</event-sheet>
+        <event-sheet>Event sheet 6.xml</event-sheet>
+        <event-sheet>Event sheet 7.xml</event-sheet>
+        <event-sheet>Event sheet 8.xml</event-sheet>
+        <event-sheet>Event sheet 9.xml</event-sheet>
+        <event-sheet>Event sheet 10.xml</event-sheet>
+        <event-sheet>Event sheet 11.xml</event-sheet>
+        <event-sheet>Event sheet 12.xml</event-sheet>
+        <event-sheet>Event sheet 13.xml</event-sheet>
+        <event-sheet>Event sheet 14.xml</event-sheet>
+        <event-sheet>Event sheet 15.xml</event-sheet>
+        <event-sheet>Event sheet 16.xml</event-sheet>
+        <event-sheet>Event sheet 17.xml</event-sheet>
+        <event-sheet>Event sheet 18.xml</event-sheet>
+        <event-sheet>Event sheet 19.xml</event-sheet>
+        <event-sheet>Event sheet 20.xml</event-sheet>
+        <event-sheet>Event sheet 21.xml</event-sheet>
+        <event-sheet>Event sheet 22.xml</event-sheet>
+        <event-sheet>Event sheet 23.xml</event-sheet>
+        <event-sheet>Event sheet 24.xml</event-sheet>
+        <event-sheet>Event sheet 25.xml</event-sheet>
+        <event-sheet>Event sheet 26.xml</event-sheet>
+        <event-sheet>Event sheet 27.xml</event-sheet>
+        <event-sheet>Event sheet 28.xml</event-sheet>
+        <event-sheet>Event sheet 29.xml</event-sheet>
+        <event-sheet>Event sheet 30.xml</event-sheet>
+        <event-sheet>CutSceneSheet.xml</event-sheet>
+        <event-sheet>tutsheet.xml</event-sheet>
+        <event-sheet>LoaderSheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="15">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="16" />
+        <global-instance type="Function" uid="89" />
+        <global-instance type="LocalStorage1" uid="498" />
+        <global-instance type="Audio" uid="781">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="800" />
+    </global-instances>
+    <sounds-folder>
+        <file name="BallDestroy.ogg" />
+        <file name="BaseballHit.ogg" />
+        <file name="Button.ogg" />
+        <file name="ConcreteHit.ogg" />
+        <file name="Electricity.ogg" />
+        <file name="German_dying2.ogg" />
+        <file name="GlassHit.ogg" />
+        <file name="GlassShatter.ogg" />
+        <file name="Grunt.ogg" />
+        <file name="Iron_board_3.ogg" />
+        <file name="Music_beat_loop_full_band_contemporary_light_rock_.ogg" />
+        <file name="Portal.ogg" />
+        <file name="Switch.ogg" />
+        <file name="TireHit.ogg" />
+        <file name="Wood_Hit.ogg" />
+        <file name="Woosh.ogg" />
+        <file name="INDUSTRY_GENERAL_VENDING_MACHINE_INSERT_COIN_01.ogg" />
+        <file name="woosh_9.ogg" />
+        <file name="Clown_mask_pick_up_from_box_rubber_bald_BLASTWAVEF.ogg" />
+        <file name="pop_06_CHA_get_them_stars_L2.ogg" />
+        <file name="EGG_ZAP_1.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="Spriter animations">
+            <file name="Henk.scml" />
+            <file name="Henk.scon" />
+            <file name="Menu Henk.scml" />
+            <file name="Menu Henk.scon" />
+        </file-folder>
+    </files-folder>
+</c2project>

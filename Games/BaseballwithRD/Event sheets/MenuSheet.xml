@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuSheet</name>
+    <events>
+        <variable constant="0" name="CreditsClicked" sid="2863306357993126" static="0" type="number">0</variable>
+        <variable constant="0" name="CrsorOverSound" sid="9277572340583666" static="0" type="number">0</variable>
+        <variable constant="0" name="PauseClicked" sid="7970441054872698" static="0" type="number">0</variable>
+        <variable constant="0" name="SoundActive" sid="8224674922483327" static="0" type="number">1</variable>
+        <event-block sid="8129703424946687">
+            <conditions>
+                <condition id="666" name="On initialised" sid="5734045782752911" type="MenuHenk" />
+            </conditions>
+            <actions>
+                <action id="666" name="Associate object type" sid="4959894577289397" type="MenuHenk">
+                    <param id="0" name="Object">MenuHenk_Henk_HandR</param>
+                    <param id="1" name="Name">&quot;Henk_Hand R&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="7627711641960562" type="MenuHenk">
+                    <param id="0" name="Object">MenuHenk_Henk_Pant</param>
+                    <param id="1" name="Name">&quot;Henk_Pant&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="7468725828023099" type="MenuHenk">
+                    <param id="0" name="Object">MenuHenk_Henk_Torso</param>
+                    <param id="1" name="Name">&quot;Henk_Torso&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="8455276255624984" type="MenuHenk">
+                    <param id="0" name="Object">MenuHenk_Henk_Head</param>
+                    <param id="1" name="Name">&quot;Henk_Head&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="3894844197685723" type="MenuHenk">
+                    <param id="0" name="Object">MenuHenk_Henk_HandL</param>
+                    <param id="1" name="Name">&quot;Henk_Hand L&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8329586156632227">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="808992149307205" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6999433671959523" type="System">
+                    <param id="0" name="Variable">CreditsClicked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="6" name="Stop" sid="7492113660635182" type="Audio">
+                    <param id="0" name="Tag">&quot;bg&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="136711453502832" type="Audio">
+                    <param id="0" name="Audio file">pop_06_CHA_get_them_stars_L2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;bg&quot;</param>
+                </action>
+                <action id="2" name="Set object scale ratio" sid="2286998250966604" type="MenuHenk">
+                    <param id="0" name="Scale Ratio">0.5</param>
+                    <param id="1" name="Flip X Axis">0</param>
+                    <param id="2" name="Flip Y Axis">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="6408867995555935" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="9300000162142511" type="PlayBtn">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="3212853659799552" type="Logo">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="5" name="Check item exists" sid="2989429311838585" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Stars&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="8712801309196009" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Unlocked&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="3083703083271693" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="418295696658032" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="5038052501892763" type="PlayBtn">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7939025895396825">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1698757635884948" type="Mouse">
+                    <param id="0" name="Object">Achievements</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7476876270278803" type="Achievements">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="76612306181912">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4565760608158658" type="Mouse">
+                    <param id="0" name="Object">Achievements</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="770072556744478" type="Achievements">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4787917198388923">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="8193760762005078" type="Mouse">
+                    <param id="0" name="Object">Help</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3846545644951453" type="Help">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8654001577602067">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8892774059760919" type="Mouse">
+                    <param id="0" name="Object">Help</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2770369845002353" type="Help">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9979879667645977">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2984831801106744" type="Mouse">
+                    <param id="0" name="Object">HighScores</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1622527288961713" type="HighScores">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2696607760784455">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="9456694199754129" type="Mouse">
+                    <param id="0" name="Object">HighScores</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7014340047551538" type="HighScores">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7831984979613222">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7702280847374047" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PlayBtn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1550429416881302" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="3590418594464878" type="System">
+                    <param id="0" name="Layout">LevelSelect</param>
+                </action>
+                <action id="-9" name="Set value" sid="3150023800411663" type="System">
+                    <param id="0" name="Variable">TouchActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8872185782261958">
+            <conditions>
+                <condition id="9" name="On item exists" sid="3328792535736377" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Stars&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="2292672187233045" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Stars&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4340657598831919">
+            <conditions>
+                <condition id="1" name="On item get" sid="8811902080380895" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Stars&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Load" sid="2049801082986089" type="Stars">
+                    <param id="0" name="JSON">LocalStorage1.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5863082002812083">
+            <conditions>
+                <condition id="9" name="On item exists" sid="3193689753954797" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Unlocked&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="6280225960776819" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Unlocked&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4123743995950948">
+            <conditions>
+                <condition id="1" name="On item get" sid="2115693932381287" type="LocalStorage1">
+                    <param id="0" name="Key">&quot;Unlocked&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Load" sid="7236784234807612" type="Unlocked">
+                    <param id="0" name="JSON">LocalStorage1.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5130883275868498">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1639293527718192" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sound</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6201678981979541" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3644663406153386" type="Sound">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="0" name="Play" sid="5922852455562633" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="10" name="Set master volume" sid="419105743110781" type="Audio">
+                    <param id="0" name="dB">-100</param>
+                </action>
+                <action id="-16" name="Wait" sid="8438198325665047" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7498367115034757" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1154744444441341">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3696685653313113" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sound</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6300758466818796" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7685893557390751" type="Sound">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="0" name="Play" sid="9810982599085974" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="10" name="Set master volume" sid="6871612702044097" type="Audio">
+                    <param id="0" name="dB">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="6656747131492129" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3435412530319859" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2966472639964447">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7937844487724262" type="Touch">
+                    <param id="0" name="Object">Sound</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="847455070384016" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2177646014766366" type="Sound">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="0" name="Play" sid="2706139921888333" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="10" name="Set master volume" sid="4904579487007591" type="Audio">
+                    <param id="0" name="dB">-100</param>
+                </action>
+                <action id="-16" name="Wait" sid="169781666834731" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2970848675170464" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8246370385377271">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9957412835207002" type="Touch">
+                    <param id="0" name="Object">Sound</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3665752608074715" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="8289268636186273" type="Sound">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="0" name="Play" sid="8902366594491361" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="10" name="Set master volume" sid="6448784714580687" type="Audio">
+                    <param id="0" name="dB">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="3414519343988668" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8257491081534394" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6495710697711145">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7312228548779501" type="Touch">
+                    <param id="0" name="Object">PlayBtn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6979924279395827" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9503748532456714" type="System">
+                    <param id="0" name="Layout">LevelSelect</param>
+                </action>
+                <action id="-9" name="Set value" sid="5306249409035331" type="System">
+                    <param id="0" name="Variable">TouchActive</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6668570170600715">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1069318979808181" type="Mouse">
+                    <param id="0" name="Object">Sound</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2505093846322161" type="System">
+                    <param id="0" name="Variable">CrsorOverSound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4149476418443782">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="322832138936586" type="Mouse">
+                    <param id="0" name="Object">Sound</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7636375367315595" type="System">
+                    <param id="0" name="Variable">CrsorOverSound</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2181384161641307">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8310320395602419" type="System">
+                    <param id="0" name="Variable">CrsorOverSound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7324844729949027" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7491627376350724" type="Sound">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7672311164437095">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6934628600485941" type="System">
+                    <param id="0" name="Variable">CrsorOverSound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4202004989150359" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5313106780086718" type="Sound">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4972175967379226">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5033775018288291" type="System">
+                    <param id="0" name="Variable">CrsorOverSound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1560338120315336" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="6612130805011961" type="Sound">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9930618956878346">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6842812614332902" type="System">
+                    <param id="0" name="Variable">CrsorOverSound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2135145375047826" type="System">
+                    <param id="0" name="Variable">SoundActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="8000624762170276" type="Sound">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7140951903937475">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6800359540186797" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Help</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="2559315959475207" type="Touch">
+                    <param id="0" name="Object">Help</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="3792962588475545" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com/baseball-for-clowns/#down-scroll&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2068410591957333">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2747585042656033" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">CreditsBtn</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5844246702175646" type="System">
+                    <param id="0" name="Variable">CreditsClicked</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5128811420157395" type="System">
+                    <param id="0" name="Variable">CreditsClicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="3180599243874722" type="System">
+                    <param id="0" name="Object to create">CreditsPanel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">225</param>
+                </action>
+                <action id="-3" name="Create object" sid="901627119490143" type="System">
+                    <param id="0" name="Object to create">CreditsClose</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">555</param>
+                    <param id="3" name="Y">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7158483110764157">
+            <conditions>
+                <condition id="17" name="On tap object" sid="2535589719596899" type="Touch">
+                    <param id="0" name="Object">CreditsBtn</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8426665401635433" type="System">
+                    <param id="0" name="Variable">CreditsClicked</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6924403587536564" type="System">
+                    <param id="0" name="Variable">CreditsClicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Create object" sid="7898961818893446" type="System">
+                    <param id="0" name="Object to create">CreditsPanel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">225</param>
+                </action>
+                <action id="-3" name="Create object" sid="1063048778020344" type="System">
+                    <param id="0" name="Object to create">CreditsClose</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">555</param>
+                    <param id="3" name="Y">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="889596004085651">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3481734809588095" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">CreditsClose</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2637096390873287" type="CreditsPanel" />
+                <action id="-9" name="Destroy" sid="9034424905634389" type="CreditsClose" />
+                <action id="-9" name="Set value" sid="3940376542559446" type="System">
+                    <param id="0" name="Variable">CreditsClicked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9839997829528753">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9019235325644795" type="Touch">
+                    <param id="0" name="Object">CreditsClose</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3833056692420937" type="CreditsPanel" />
+                <action id="-9" name="Destroy" sid="3468618734646673" type="CreditsClose" />
+                <action id="-9" name="Set value" sid="2210313088404735" type="System">
+                    <param id="0" name="Variable">CreditsClicked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="8497366650689305">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8514048318048622" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">KIZ10Logo</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="7964111638714564" type="Touch">
+                    <param id="0" name="Object">KIZ10Logo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="8375001297615456" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="3503647854651166">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9646632618752201" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">addtosite</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="2302865983611061" type="Touch">
+                    <param id="0" name="Object">addtosite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="5186508500831905" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com/games-for-your-site&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="3268405059430684">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7368916072459064" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">moregames</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="915311092923235" type="Touch">
+                    <param id="0" name="Object">moregames</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="9613665373103481" type="Browser">
+                    <param id="0" name="URL">&quot;http://kiz10.com&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow4&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
